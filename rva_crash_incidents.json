@@ -17,6 +17,7 @@
   "lon": -77.44875,
   "approx": true,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "OSM mile-marker 88 node on I-95"
  },
@@ -38,6 +39,7 @@
   "lon": -77.525293446372,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "approximate",
   "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
  },
@@ -59,6 +61,7 @@
   "lon": -77.52928,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 9000 River Rd (Chesterfield); corrects a Census match to a Henrico River Rd"
  },
@@ -80,6 +83,7 @@
   "lon": -77.56399,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "Census address 10300 River Rd; between Chesdin Ridge Dr and Chesdin Park Dr"
  },
@@ -101,6 +105,7 @@
   "lon": -77.60707,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -122,6 +127,7 @@
   "lon": -77.54984,
   "approx": false,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -143,6 +149,7 @@
   "lon": -76.9777,
   "approx": true,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-64 MM 217, interpolated between OSM exits 214 and 220 (New Kent)"
  },
@@ -164,6 +171,7 @@
   "lon": -77.31306,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "New Market Rd x Turner Rd geometry"
  },
@@ -185,6 +193,7 @@
   "lon": -77.54818,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -206,6 +215,7 @@
   "lon": -77.59533,
   "approx": true,
   "month": "2026-08",
+  "pre_window": true,
   "geo_confidence": "midpoint",
   "geo_how": "I-295 midpoint within Henrico (source gives no landmark)"
  },
@@ -227,6 +237,7 @@
   "lon": -77.506374,
   "approx": false,
   "month": "2026-08",
+  "pre_window": true,
   "geo_confidence": "approximate",
   "geo_how": "Glen Allen, Henrico"
  },
@@ -248,6 +259,7 @@
   "lon": -77.29267,
   "approx": true,
   "month": "2026-08",
+  "pre_window": true,
   "geo_confidence": "midpoint",
   "geo_how": "I-295 midpoint in eastern Henrico"
  },
@@ -269,6 +281,7 @@
   "lon": -77.446842748487,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "approximate",
   "geo_how": "900 W LEIGH ST, RICHMOND, VA, 23220"
  },
@@ -290,6 +303,7 @@
   "lon": -77.47756,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -311,6 +325,7 @@
   "lon": -77.43948,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "I-95 x Chamberlayne Ave crossing (unsnapped: the snapped centreline point is the I-64/I-95 junction used by row 21)"
  },
@@ -332,6 +347,7 @@
   "lon": -77.574600052641,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "approximate",
   "geo_how": "9210 STONY POINT PKWY, RICHMOND, VA, 23235"
  },
@@ -353,6 +369,7 @@
   "lon": -77.43909,
   "approx": false,
   "month": "2026-09",
+  "pre_window": true,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -374,6 +391,7 @@
   "lon": -77.56515,
   "approx": false,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "VA-288 x Courthouse Rd geometry"
  },
@@ -395,6 +413,7 @@
   "lon": -77.62385,
   "approx": false,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM addresses 15104-15240 Ashland Rd"
  },
@@ -416,6 +435,7 @@
   "lon": -77.43813,
   "approx": false,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-64 x I-95 interchange geometry"
  },
@@ -437,6 +457,7 @@
   "lon": -77.4487,
   "approx": false,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-95 x Lewistown Rd geometry (Exit 89)"
  },
@@ -458,6 +479,7 @@
   "lon": -77.59765,
   "approx": true,
   "month": "2026-09",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-64 MM 178 (article text); exit 178 = Short Pump/Rt 250"
  },
@@ -479,6 +501,7 @@
   "lon": -77.37742,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 900 W Hundred Rd"
  },
@@ -500,6 +523,7 @@
   "lon": -77.39827,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-95 x Woods Edge Rd geometry (Exit 58)"
  },
@@ -521,6 +545,7 @@
   "lon": -77.46061,
   "approx": true,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "midpoint",
   "geo_how": "I-95 midpoint within Hanover (source gives no landmark)"
  },
@@ -542,6 +567,7 @@
   "lon": -77.41662,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM addresses 11920-12020 Jefferson Davis Hwy"
  },
@@ -563,6 +589,7 @@
   "lon": -77.62477,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 2700 Old Gun Road W"
  },
@@ -584,6 +611,7 @@
   "lon": -77.49412,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 6400 Iron Bridge Pl"
  },
@@ -605,6 +633,7 @@
   "lon": -77.49737,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 5700 Hull Street Rd (interpolated 5696-5724)"
  },
@@ -626,6 +655,7 @@
   "lon": -77.45327,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Lakeridge Pkwy x Lewistown Rd geometry"
  },
@@ -647,6 +677,7 @@
   "lon": -77.50399,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -668,6 +699,7 @@
   "lon": -77.58148,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Nuckols Rd x I-295 geometry"
  },
@@ -689,6 +721,7 @@
   "lon": -77.56136,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -710,6 +743,7 @@
   "lon": -77.4106,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Census address 16701 Jefferson Davis Hwy (Eagle Motors)"
  },
@@ -731,6 +765,7 @@
   "lon": -77.52028,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 7200 W Broad St; previously collapsed onto the 7800 block"
  },
@@ -752,6 +787,7 @@
   "lon": -77.60134,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 10000 Spring Run Rd"
  },
@@ -773,6 +809,7 @@
   "lon": -77.44655,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 13000 Harrowgate Rd"
  },
@@ -794,6 +831,7 @@
   "lon": -77.32824,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -815,6 +853,7 @@
   "lon": -77.49948,
   "approx": false,
   "month": "2026-10",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -836,6 +875,7 @@
   "lon": -77.4724,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM addresses 8746-8824 Chester Forest Ln"
  },
@@ -857,6 +897,7 @@
   "lon": -77.676480715864,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "16861 MOUNTAIN RD, MONTPELIER, VA, 23192"
  },
@@ -878,6 +919,7 @@
   "lon": -77.45724,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -899,6 +941,7 @@
   "lon": -77.29468,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-295 x Portugee Rd geometry"
  },
@@ -920,6 +963,7 @@
   "lon": -77.41531,
   "approx": true,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-95 MM 62.8, bracketed by OSM exits 62 and 64"
  },
@@ -941,6 +985,7 @@
   "lon": -77.638,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -962,6 +1007,7 @@
   "lon": -77.42492,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -983,6 +1029,7 @@
   "lon": -77.43469,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1004,6 +1051,7 @@
   "lon": -77.53783,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1025,6 +1073,7 @@
   "lon": -77.54147,
   "approx": true,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-64 MM 182.2, bracketed by OSM exits 181 and 183"
  },
@@ -1046,6 +1095,7 @@
   "lon": -77.471,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Census address 12100 Washington Hwy, Ashland"
  },
@@ -1067,6 +1117,7 @@
   "lon": -77.39521,
   "approx": true,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-95 MM 57.9, bracketed by OSM exits 54 and 58"
  },
@@ -1088,6 +1139,7 @@
   "lon": -77.53863,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 7700 Midlothian Tpke"
  },
@@ -1109,6 +1161,7 @@
   "lon": -77.556,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1130,6 +1183,7 @@
   "lon": -77.6299,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-64 x N Gayton Rd overpass geometry (article cites MM 176.3; OSM exits 177/178 are coincident, so the named cross street is the more reliable anchor)"
  },
@@ -1151,6 +1205,7 @@
   "lon": -77.32882,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Creighton Rd x I-295 geometry"
  },
@@ -1172,6 +1227,7 @@
   "lon": -77.44169,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1193,6 +1249,7 @@
   "lon": -77.4232,
   "approx": true,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "interpolated",
   "geo_how": "I-95 MM 67, bracketed by OSM exits 62 and 69"
  },
@@ -1214,6 +1271,7 @@
   "lon": -77.43034,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-95 x N 7th St geometry"
  },
@@ -1235,6 +1293,7 @@
   "lon": -77.41856,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM addresses 9174-9332 Hickory Hill Rd"
  },
@@ -1256,6 +1315,7 @@
   "lon": -77.4091,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "VA-288 x I-95 geometry"
  },
@@ -1277,6 +1337,7 @@
   "lon": -77.57456,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 9700 Midlothian Tpke; previously collapsed onto the 7700 block"
  },
@@ -1298,6 +1359,7 @@
   "lon": -77.64654,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM addresses 1010-1224 Kingscross Rd"
  },
@@ -1319,6 +1381,7 @@
   "lon": -77.53426,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1340,6 +1403,7 @@
   "lon": -77.36518,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -1361,6 +1425,7 @@
   "lon": -77.5244591,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "Mexico Restaurant, Forest Hill Avenue, Richmond"
  },
@@ -1382,6 +1447,7 @@
   "lon": -77.62105,
   "approx": false,
   "month": "2026-11",
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Lauderdale Dr x W Broad St geometry"
  },
@@ -1403,6 +1469,7 @@
   "lon": -77.53562,
   "approx": true,
   "month": "2026-05",
+  "pre_window": true,
   "geo_confidence": "approximate",
   "geo_how": "W Broad St x N Parham Rd (source names only 'West Broad Street')"
  }

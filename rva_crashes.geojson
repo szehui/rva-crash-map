@@ -26,6 +26,7 @@
     "links": "https://www.wtvr.com/news/local-news/hanover-county/crash-sept-18; https://www.wric.com/news/local-news/hanover-county/deadly-two-vehicle-crash-i-95-sept-17/; https://www.12onyourside.com/2026/09/18/1-dead-i-95-south-crash/",
     "approx": true,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "OSM mile-marker 88 node on I-95"
    }
@@ -55,6 +56,7 @@
     "links": "https://www.wtvr.com/news/local-news/henrico-county/henrico-police-crash-sept-16-2026; https://www.wric.com/news/local-news/henrico-county/deadly-crash-west-broad-street-sept-11/; https://www.henricocitizen.com/fatal-west-broad-crash/; https://richmond.com/news/local/crime-courts/article_728df01f-8b6b-4476-925d-12b1779ef5c8.html",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "approximate",
     "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
    }
@@ -84,6 +86,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/chesterfield-crash-sept-15-2026; https://www.wric.com/news/local-news/chesterfield-county/man-killed-crash-river-road-che/; https://richmond.com/news/local/crime-courts/article_5b26f699-4436-451d-960d-4a16ae0a469f.html;https://www.wric.com/news/local-news/chesterfield-county/23-year-old-killed-river-road-crash/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 9000 River Rd (Chesterfield); corrects a Census match to a Henrico River Rd"
    }
@@ -113,6 +116,7 @@
     "links": "https://www.wtvr.com/news/local-news/pedestrian-seriously-injured-after-crash-in-chesterfield-county; https://www.wric.com/news/local-news/chesterfield-county/man-hurt-hit-vehicle-river-road-chesterfield/; https://richmond.com/news/local/crime-courts/article_26acd5f5-3a03-4b66-b32e-e6b66bebdc06.html",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "Census address 10300 River Rd; between Chesdin Ridge Dr and Chesdin Park Dr"
    }
@@ -142,6 +146,7 @@
     "links": "https://www.wtvr.com/news/local-news/pump-road-patterson-interesection-dascham-crash-sept-9-2026; https://www.henricocitizen.com/dashcam-captures-rollover-crash-after-suv-runs-red-light-in-henrico/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -171,6 +176,7 @@
     "links": "https://www.wtvr.com/news/local-news/henrico-county/woman-hit-by-car-w-broad-street-tuckernuck-drive-sept-17-2026; https://www.12onyourside.com/2026/09/17/pedestrian-hospitalized-after-hit-by-car-henrico/; https://www.wric.com/news/local-news/henrico-county/woman-hit-by-vehicle-tuckernuck-drive/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -200,6 +206,7 @@
     "links": "https://nkccnews.com/local-news/2026/09/18/early-morning-crash-claims-lives-of-two-people-in-new-kent/",
     "approx": true,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-64 MM 217, interpolated between OSM exits 214 and 220 (New Kent)"
    }
@@ -229,6 +236,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/cement-truck-crash-new-market-road/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "New Market Rd x Turner Rd geometry"
    }
@@ -258,6 +266,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/motorcycle-suv-crash-huguenot-road/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -287,6 +296,7 @@
     "links": "https://www.henricocitizen.com/deadly-crash-shuts-down-all-northbound-lanes-of-i-295-in-henrico/",
     "approx": true,
     "month": "2026-08",
+    "pre_window": true,
     "geo_confidence": "midpoint",
     "geo_how": "I-295 midpoint within Henrico (source gives no landmark)"
    }
@@ -316,6 +326,7 @@
     "links": "https://www.henricocitizen.com/two-17-year-olds-killed-another-injured-in-glen-allen-crash/; https://www.henricocitizen.com/teen-killed-in-henrico-crash-identified-as-glen-allen-high-school-student/",
     "approx": false,
     "month": "2026-08",
+    "pre_window": true,
     "geo_confidence": "approximate",
     "geo_how": "Glen Allen, Henrico"
    }
@@ -345,6 +356,7 @@
     "links": "https://www.henricocitizen.com/pedestrian-hit-and-killed-on-i-295-in-eastern-henrico/",
     "approx": true,
     "month": "2026-08",
+    "pre_window": true,
     "geo_confidence": "midpoint",
     "geo_how": "I-295 midpoint in eastern Henrico"
    }
@@ -374,6 +386,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/crash-into-home-leigh-street-sept-7/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "approximate",
     "geo_how": "900 W LEIGH ST, RICHMOND, VA, 23220"
    }
@@ -403,6 +416,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/cyclist-hospitalized-henrico/; https://richmond.com/news/local/crime-courts/article_68036e45-9163-4242-be4e-ab11899b088e.html",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -432,6 +446,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/i-95-vehicle-crash-sept-12/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "I-95 x Chamberlayne Ave crossing (unsnapped: the snapped centreline point is the I-64/I-95 junction used by row 21)"
    }
@@ -461,6 +476,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/man-dead-crash-parking-lot/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "approximate",
     "geo_how": "9210 STONY POINT PKWY, RICHMOND, VA, 23235"
    }
@@ -490,6 +506,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/man-hit-injured-electric-scooter-downtown/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": true,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -519,6 +536,7 @@
     "links": "https://www.wric.com/news/local-news/chesterfield-county/3-drivers-hurt-crash-route-288/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "VA-288 x Courthouse Rd geometry"
    }
@@ -548,6 +566,7 @@
     "links": "https://richmond.com/news/local/crime-courts/article_30f1297d-3e74-4b1d-8c4d-ede95e06497d.html;https://www.12onyourside.com/2026/10/01/glen-allen-man-dies-hanover-crash/;https://www.henricocitizen.com/glen-allen-man-dies-in-single-vehicle-crash-in-hanover/;https://www.henricocitizen.com/henriconewsflashoct12026/;https://www.wric.com/news/local-news/hanover-county/glen-allen-man-killed-crash-ashland-road/;https://www.wtvr.com/news/local-news/ashland-road-fatal-crash-oct-1-2026",
     "approx": false,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM addresses 15104-15240 Ashland Rd"
    }
@@ -577,6 +596,7 @@
     "links": "https://www.wtvr.com/news/local-news/richmond/ashtain-noel-davis-dead-motorcycle-driver-hit-and-run-interstate-64-95-ramp-sept-26-2026;https://www.12onyourside.com/2026/09/26/police-hit-and-run-kills-28-year-old-motorcyclist/;https://www.wric.com/news/local-news/richmond/man-dead-hit-and-run-interstate-ramp/;https://richmond.com/news/local/crime/article_1c4e0ec6-587b-4dcd-9c4c-22265fd9c07c.html;https://www.henricocitizen.com/henrico-firefighter-killed-in-richmond-hit-and-run/;https://www.12onyourside.com/2026/10/10/funeral-service-held-henrico-firefighter-killed-hit-and-run/;https://www.wric.com/news/local-news/richmond/funeral-service-henrico-firefighter-killed-cathedral/;https://www.henricocitizen.com/henrico-firefighter-killed-in-hit-and-run-remembered-as-the-perfect-rookie/;https://richmond.com/news/local/crime-courts/article_b34a45e4-84ff-44e1-9348-9263919bacda.html",
     "approx": false,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-64 x I-95 interchange geometry"
    }
@@ -606,6 +626,7 @@
     "links": "https://www.wric.com/news/local-news/hanover-county/multi-vehicle-crash-i-95-hanover/",
     "approx": false,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-95 x Lewistown Rd geometry (Exit 89)"
    }
@@ -635,6 +656,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/deadly-single-vehicle-crash-route-250-i-64/;https://www.wtvr.com/news/local-news/henrico-county/one-dead-sept-28-2026",
     "approx": true,
     "month": "2026-09",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-64 MM 178 (article text); exit 178 = Short Pump/Rt 250"
    }
@@ -664,6 +686,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/person-airlifted-after-crash-involving-truck-hauling-vehicles-in-chesterfield-county; https://www.wric.com/news/local-news/chesterfield-county/one-hurt-flown-medflight-crash-west-hundred-road/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 900 W Hundred Rd"
    }
@@ -693,6 +716,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/dump-truck-crash-oct-6-2026; https://www.12onyourside.com/2026/10/06/1-dead-after-tractor-trailer-crash-i-95-colonial-heights/; https://www.wric.com/news/local-news/chesterfield-county/deadly-crash-i-95-woods-edge-road/; https://www.wric.com/news/local-news/chesterfield-county/richmond-man-killed-dump-truck-crash-i-95/; https://richmond.com/news/local/crime-courts/article_d2327662-23fb-46ac-8214-18080862ac98.html",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-95 x Woods Edge Rd geometry (Exit 58)"
    }
@@ -722,6 +746,7 @@
     "links": "https://www.12onyourside.com/2026/10/08/tractor-trailer-carrying-peanuts-overturns-i-95-hanover/",
     "approx": true,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "midpoint",
     "geo_how": "I-95 midpoint within Hanover (source gives no landmark)"
    }
@@ -751,6 +776,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/woman-struck-by-van-oct-11-2026",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM addresses 11920-12020 Jefferson Davis Hwy"
    }
@@ -780,6 +806,7 @@
     "links": "https://www.wtvr.com/news/local-news/police-identify-man-who-suffered-medical-emergency-before-fatal-chesterfield-crash",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 2700 Old Gun Road W"
    }
@@ -809,6 +836,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/driver-crashes-into-bella-italia-oct-15-2026;https://www.12onyourside.com/2026/10/15/car-crashes-into-restaurant-no-one-injured/;https://www.wric.com/news/local-news/chesterfield-county/vehicle-into-building-iron-bridge-road/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 6400 Iron Bridge Pl"
    }
@@ -838,6 +866,7 @@
     "links": "https://www.wtvr.com/news/local-news/driver-trapped-hull-street-crash-oct-24-2026",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 5700 Hull Street Rd (interpolated 5696-5724)"
    }
@@ -867,6 +896,7 @@
     "links": "https://www.12onyourside.com/2026/10/27/man-hit-by-car-while-crossing-street-hanover/; https://www.wric.com/news/local-news/hanover-county/pedestrian-hit-lakeridge-parkway-oct-26/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Lakeridge Pkwy x Lewistown Rd geometry"
    }
@@ -896,6 +926,7 @@
     "links": "https://www.wtvr.com/news/local-news/pedestrian-seriously-hurt-after-being-struck-by-vehicle-in-henrico",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -925,6 +956,7 @@
     "links": "https://www.wtvr.com/news/local-news/henrico-county/bicyclist-hurt-glen-allen-oct-15-2026;https://www.12onyourside.com/2026/10/15/bicyclist-seriously-injured-nuckols-road-crash/;https://www.wric.com/news/local-news/henrico-county/bicyclist-hurt-crash-i-295-overpass/;https://richmond.com/news/local/crime-courts/article_13bd3e26-6793-40c3-999f-fb4258316b3c.html",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Nuckols Rd x I-295 geometry"
    }
@@ -954,6 +986,7 @@
     "links": "https://www.wtvr.com/news/local-news/man-seriously-hurt-after-e-bike-crash-in-chesterfield-county",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -983,6 +1016,7 @@
     "links": "https://www.wtvr.com/news/local-news/man-dies-after-medical-emergency-causes-crash-at-chesterfield-county-car-dealership",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Census address 16701 Jefferson Davis Hwy (Eagle Motors)"
    }
@@ -1012,6 +1046,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/video-van-crash-west-end-thrift/; https://www.wtvr.com/news/local-news/hanover-man-charged-with-dwi-after-crashing-into-west-end-thrift; https://www.henricocitizen.com/henrico-man-charged-with-dwi-after-crashing-into-west-end-thrift/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 7200 W Broad St; previously collapsed onto the 7800 block"
    }
@@ -1041,6 +1076,7 @@
     "links": "https://www.wric.com/news/local-news/chesterfield-county/3-hospitalized-crash-spring-run-road/; https://www.wtvr.com/news/local-news/chesterfield-county/four-hospitalized-following-chesterfield-county-crash-on-spring-run-road; https://www.wric.com/news/local-news/chesterfield-county/baby-killed-crash-spring-run-road/; https://www.wric.com/news/local-news/chesterfield-county/baby-dies-spring-run-road-crash/; https://www.12onyourside.com/2026/10/29/one-dead-after-chesterfield-crash/; https://richmond.com/news/local/crime-courts/article_96477175-992a-42b5-b10d-cab967f6419f.html; https://www.wtvr.com/news/local-news/family-mourns-10-month-old-girl-killed-in-chesterfield-crash-mother-faces-dui-manslaughter-charge; https://www.wric.com/news/local-news/chesterfield-county/mother-charged-chesterfield-crash-dui-manslaughter/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 10000 Spring Run Rd"
    }
@@ -1070,6 +1106,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/1-with-critical-injuries-after-two-vehicle-collision-in-chesterfield-county; https://www.12onyourside.com/2026/10/30/one-person-dead-another-hurt-car-crash/; https://www.wric.com/news/local-news/chesterfield-county/man-dead-crash-harrowgate-road/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 13000 Harrowgate Rd"
    }
@@ -1099,6 +1136,7 @@
     "links": "https://www.wtvr.com/news/local-news/woman-killed-after-being-struck-by-vehicle-near-richmond-international-airport; https://www.12onyourside.com/2026/10/30/woman-dies-after-hit-by-car-henrico/; https://www.wric.com/news/local-news/henrico-county/61-year-old-sc-woman-killed-williamsburg-road-crash/; https://www.wric.com/news/local-news/henrico-county/woman-killed-pedestrian-crash-williamsburg-road/; https://www.henricocitizen.com/police-identify-woman-killed-williamsburg-road-pedestrian-crash/",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1128,6 +1166,7 @@
     "links": "https://www.12onyourside.com/2026/10/31/pedestrian-killed-crash-police-need-help-identifying-victim/; https://www.wric.com/news/local-news/henrico-county/pedestrian-crash-police-seek-help-identifying/; https://richmond.com/news/local/crime/article_27f78390-3aaa-4a58-a154-58c8a7a7ad4c.html; https://www.henricocitizen.com/henrico-police-work-to-identify-man-killed-while-walking-near-staples-mill-road/; https://www.wric.com/news/local-news/henrico-county/31-year-old-man-killed-crash-identified/; https://richmond.com/news/local/crime-courts/article_5b18872d-bf84-452d-807e-1f5baa68a8db.html",
     "approx": false,
     "month": "2026-10",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1157,6 +1196,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/man-killed-child-injured-hit-by-car--chester-forest-drive-halloween-party-nov-1-2026; https://www.12onyourside.com/2026/11/01/man-dies-after-being-hit-by-car-child-injured-well/; https://www.wric.com/news/local-news/chesterfield-county/19-y-o-dead-12-y-o-injured-hit-by-car/; https://richmond.com/news/local/crime-courts/article_ff435749-8688-4ffa-a123-153dbc329da9.html; https://www.12onyourside.com/2026/11/04/court-document-reveals-new-details-after-man-died-child-hurt-hit-and-run/; https://www.wric.com/news/local-news/chesterfield-county/deadly-hit-and-run-chester-forest-lane/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM addresses 8746-8824 Chester Forest Ln"
    }
@@ -1186,6 +1226,7 @@
     "links": "https://www.wric.com/news/local-news/hanover-county/driver-hospitalized-crash-fire-station/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "16861 MOUNTAIN RD, MONTPELIER, VA, 23192"
    }
@@ -1215,6 +1256,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/water-pressure-issues-power-outage-nov-2/; https://www.12onyourside.com/2026/11/03/richmond-low-water-pressure-caused-by-power-outage/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1244,6 +1286,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/person-hospitalized-driver-asleep-i295-north/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-295 x Portugee Rd geometry"
    }
@@ -1273,6 +1316,7 @@
     "links": "https://www.wtvr.com/news/local-news/1-dead-after-i-95-crash-in-chesterfield-county-near-route-288; https://www.wtvr.com/news/local-news/fatal-crash-nov-4-2026; https://www.12onyourside.com/2026/11/04/1-dead-chesterfield-crash-i-95/; https://www.wric.com/news/local-news/chesterfield-county/chesterfield-man-killed-crash-i-95-nov-3/",
     "approx": true,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-95 MM 62.8, bracketed by OSM exits 62 and 64"
    }
@@ -1302,6 +1346,7 @@
     "links": "https://www.12onyourside.com/2026/11/06/2-people-taken-hospital-after-vehicle-crashes-into-henrico-building/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1331,6 +1376,7 @@
     "links": "https://www.wtvr.com/news/local-news/richmond/killed-crossing-shockoe-bottom-street-nov-6-2026; https://www.12onyourside.com/2026/11/06/police-search-driver-deadly-hit-and-run/; https://www.wric.com/news/local-news/richmond/75-year-old-man-killed-hit-and-run-nov-6/; https://www.wric.com/news/local-news/richmond/deadly-hit-and-run-shockoe-bottom-nov-6/; https://richmond.com/news/local/crime-courts/article_1fc427ca-ff05-434d-b6ac-2103ffac1bc0.html; https://www.12onyourside.com/2026/11/09/richmond-area-musicians-remember-folk-singer-killed-hit-and-run/; https://www.wric.com/news/local-news/richmond/local-musician-friends-remember-crash/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1360,6 +1406,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/man-charged-98-year-old-hit-by-car-killed/; https://richmond.com/news/local/crime-courts/article_aad14f35-9430-4216-9dd4-ddde946b3ade.html",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1389,6 +1436,7 @@
     "links": "https://www.12onyourside.com/2026/11/07/crash-brings-down-power-lines-closes-skipwith-road-henrico/; https://www.wtvr.com/news/local-news/henrico-county/crash-closes-skipwith-road-nov-6-2026; https://www.wric.com/news/local-news/henrico-county/utility-pole-snapped-crash-skipwith-road/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1418,6 +1466,7 @@
     "links": "https://www.wtvr.com/news/local-news/two-killed-in-crash-on-i-64-westbound-in-henrico-county-police-say; https://www.wric.com/news/local-news/henrico-county/two-dead-crash-vehicle-fire-i-64/; https://www.12onyourside.com/2026/11/08/single-vehicle-crash-kills-two-people-i-64/; https://www.wric.com/news/local-news/henrico-county/henrico-crash-vehicle-fire-i64/; https://www.12onyourside.com/2026/11/09/capital-run-club-founder-dies-crash/; https://www.henricocitizen.com/police-identify-2-men-killed-in-crash-on-i-64-west-in-henrico/; https://richmond.com/news/local/crime-courts/article_2913978e-eaf5-470b-99e5-b4f7a2f0ef4c.html; https://www.wric.com/news/local-news/richmond/capital-run-club-late-founder/; https://www.12onyourside.com/2026/11/12/more-than-100-people-walk-richmond-honor-capitol-run-club-founder-killed-crash/",
     "approx": true,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-64 MM 182.2, bracketed by OSM exits 181 and 183"
    }
@@ -1447,6 +1496,7 @@
     "links": "https://www.wtvr.com/news/local-news/hanover-county/richmond-man-identified-as-pedestrian-killed-in-ashland-hit-and-run; https://www.12onyourside.com/2026/11/10/richmond-man-found-dead-after-hit-and-run-ashland/; https://www.wric.com/news/local-news/hanover-county/64-yo-killed-hit-and-run-ashland/; https://richmond.com/news/local/crime-courts/article_d483ca7e-98c3-45f0-a056-8411bb978b34.html; https://www.wric.com/news/local-news/hanover-county/ashland-police-vehicle-deadly-hit-and-run/; https://www.wtvr.com/news/local-news/hanover-county/ashland-hit-and-run-vehicle-of-interest-nov-25-2026",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Census address 12100 Washington Hwy, Ashland"
    }
@@ -1476,6 +1526,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/tar-truck-crash-nov-9-2026; https://www.12onyourside.com/2026/11/09/crash-tar-spill-closes-i-95-south/; https://www.wric.com/news/local-news/chesterfield-county/two-hurt-tar-spill-crash-i-95/",
     "approx": true,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-95 MM 57.9, bracketed by OSM exits 54 and 58"
    }
@@ -1505,6 +1556,7 @@
     "links": "https://www.wtvr.com/news/local-news/motorcyclist-dies-after-crash-on-midlothian-turnpike-in-chesterfield-county-police-say; https://www.12onyourside.com/2026/11/10/motorcyclist-killed-crash-midlothian-turnpike/; https://www.wric.com/news/local-news/chesterfield-county/motorcyclist-crash-midlothian-turnpike-nov-9/; https://richmond.com/news/local/crime-courts/article_1ed72ecd-702c-4239-af45-199ec3a39d6a.html",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 7700 Midlothian Tpke"
    }
@@ -1534,6 +1586,7 @@
     "links": "https://www.wric.com/news/local-news/chesterfield-county/driver-child-sedan-tow-truck-chesterfield/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1563,6 +1616,7 @@
     "links": "https://x.com/VaDOTRVA/status/2120278259942494447; https://dailyvoice.com/article/major-crash-shuts-down-multiple-i-64-lanes-in-virginia-during-rush-hour-developing/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-64 x N Gayton Rd overpass geometry (article cites MM 176.3; OSM exits 177/178 are coincident, so the named cross street is the more reliable anchor)"
    }
@@ -1592,6 +1646,7 @@
     "links": "https://www.wtvr.com/news/local-news/henrico-county/vsi-henrico-police-chase-nov-11-2026; https://www.wric.com/news/local-news/henrico-county/pursuit-crash-creighton-road-hanover-line/; https://www.henricocitizen.com/henrico-police-chase-ends-in-life-threatening-crash/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Creighton Rd x I-295 geometry"
    }
@@ -1621,6 +1676,7 @@
     "links": "https://www.wtvr.com/news/local-news/suv-involved-in-wednesday-police-chase-crashes-into-another-leaving-driver-seriously-injured; https://www.wric.com/news/local-news/richmond/sedan-driver-hurt-i-95-pursuit-crash/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1650,6 +1706,7 @@
     "links": "https://www.12onyourside.com/2026/11/12/one-person-hospitalized-after-i-95-crash-thursday-morning/",
     "approx": true,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "interpolated",
     "geo_how": "I-95 MM 67, bracketed by OSM exits 62 and 69"
    }
@@ -1679,6 +1736,7 @@
     "links": "https://www.wtvr.com/news/local-news/richmond/good-samaritans-i-95-crash-nov-13-2026; https://www.wtvr.com/news/local-news/i-95-crash-richmond-nov-13-2026; https://www.12onyourside.com/2026/11/13/woman-fighting-life-after-serious-crash-i-95/; https://www.wric.com/news/local-news/richmond/woman-hurt-airborne-crash-i-95-overpass/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-95 x N 7th St geometry"
    }
@@ -1708,6 +1766,7 @@
     "links": "https://www.wtvr.com/news/local-news/hanover-county/driver-killed-fiery-crash-hickory-hill-road-nov-14-2026; https://www.12onyourside.com/2026/11/14/fiery-crash-hanover-kills-one-person/; https://www.wric.com/news/local-news/hanover-county/catastrophic-damage-person-dead-fiery-crash/; https://richmond.com/news/local/crime-courts/article_4e5b8a00-a7ea-4842-9c06-5b11df8ea8c9.html",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM addresses 9174-9332 Hickory Hill Rd"
    }
@@ -1737,6 +1796,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/police-chase-ends-crash-route-288-nov-15-2026; https://www.12onyourside.com/2026/11/15/suspect-custody-following-police-chase-chesterfield/; https://www.wric.com/news/local-news/chesterfield-county/30-minute-multi-county-police-chase-ends-in-crash-off-i-95-in-chesterfield/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "VA-288 x I-95 geometry"
    }
@@ -1766,6 +1826,7 @@
     "links": "https://www.12onyourside.com/2026/11/16/one-person-hospitalized-after-car-crashes-into-chesterfield-store/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 9700 Midlothian Tpke; previously collapsed onto the 7700 block"
    }
@@ -1795,6 +1856,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/crash-nov-17-2026; https://hoodline.com/2026/11/car-slams-into-midlothian-home-at-bedroom-of-80-year-old-s-mother/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM addresses 1010-1224 Kingscross Rd"
    }
@@ -1824,6 +1886,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/portion-of-turner-road-in-chesterfield-closed-after-crash-involving-suv-motorcycle; https://www.12onyourside.com/2026/11/18/motorcyclist-seriously-injured-crash-involving-school-bus-chesterfield-county/; https://www.wric.com/news/local-news/chesterfield-county/motorcyclist-hospitalized-crash-school-bus/; https://richmond.com/news/local/crime-courts/article_4458d766-afa0-47e3-ae67-1142e03fc8f2.html; https://hoodline.com/2026/11/chesterfield-school-bus-crash-leaves-motorcyclist-28-fighting-for-life/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1853,6 +1916,7 @@
     "links": "https://www.wric.com/news/local-news/chesterfield-county/bicyclist-hospitalized-hit-vehicle/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -1882,6 +1946,7 @@
     "links": "https://www.wtvr.com/news/local-news/richmond/one-dies-following-crash-on-forest-hill-avenue; https://www.12onyourside.com/2026/11/25/1-dead-after-forest-hill-avenue-motorcycle-crash/; https://www.wric.com/news/local-news/richmond/motorcyclist-killed-crash-forest-hill-avenue/; https://richmond.com/news/local/crime-courts/article_42c86dd5-66d1-4606-a0f3-effb031b340c.html",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "Mexico Restaurant, Forest Hill Avenue, Richmond"
    }
@@ -1911,6 +1976,7 @@
     "links": "https://www.wtvr.com/videos/news/local-news/henrico-county/woman-seriously-hurt-after-pedestrian-crash-in-henrico; https://hoodline.com/2026/11/woman-seriously-hurt-in-henrico-crash-as-lane-closures-expected-on-west-broad-street/",
     "approx": false,
     "month": "2026-11",
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Lauderdale Dr x W Broad St geometry"
    }
@@ -1940,6 +2006,7 @@
     "links": "https://www.wtvr.com/news/local-news/driver-arrested-in-dui-hit-and-run-that-killed-boy-on-west-broad-street-in-henrico",
     "approx": true,
     "month": "2026-05",
+    "pre_window": true,
     "geo_confidence": "approximate",
     "geo_how": "W Broad St x N Parham Rd (source names only 'West Broad Street')"
    }
