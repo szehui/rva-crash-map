@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Richmond Area Vehicle Crash Tracker</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+<style>
+  :root{--richmond:#1f6feb;--henrico:#e8590c;--chesterfield:#7048e8;--hanover:#2f9e44;--charles:#868e96;--fatal:#c92a2a;}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1b1b1b}
+  #app{display:flex;height:100%}
+  #side{width:330px;min-width:330px;height:100%;overflow-y:auto;background:#fbfaf8;border-right:1px solid #e3e0da;padding:18px 18px 40px}
+  #map{flex:1;height:100%}
+  h1{font-size:19px;margin:0 0 2px;line-height:1.25}
+  .sub{font-size:12px;color:#6b6b6b;margin-bottom:14px}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+  .card{background:#fff;border:1px solid #e6e2db;border-radius:8px;padding:9px 10px}
+  .card .n{font-size:20px;font-weight:700;line-height:1}
+  .card .l{font-size:10.5px;color:#6b6b6b;text-transform:uppercase;letter-spacing:.4px;margin-top:3px}
+  .card.fatal .n{color:var(--fatal)}
+  h2{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:#6b6b6b;margin:18px 0 8px;font-weight:700}
+  label.f{display:flex;align-items:center;gap:8px;font-size:13px;padding:5px 0;cursor:pointer;user-select:none}
+  label.f input{accent-color:#1b1b1b;width:15px;height:15px;cursor:pointer}
+  .sw{width:12px;height:12px;border-radius:50%;display:inline-block;flex:0 0 12px}
+  .sw.fatal{box-shadow:0 0 0 2px #fff,0 0 0 3.5px #1b1b1b}
+  .cnt{margin-left:auto;font-size:11.5px;color:#8a8a8a;font-variant-numeric:tabular-nums}
+  .bars{margin-top:6px}
+  .bar{display:flex;align-items:center;gap:6px;font-size:11px;margin-bottom:4px;color:#555}
+  .bar .m{width:52px;flex:0 0 52px;font-variant-numeric:tabular-nums}
+  .bar .track{flex:1;height:12px;background:#eeeae3;border-radius:2px;display:flex;overflow:hidden}
+  .bar .s{height:100%}
+  .note{font-size:11px;color:#7a7a7a;line-height:1.45;margin-top:14px;border-top:1px solid #e6e2db;padding-top:12px}
+  .pop{font-size:13px;line-height:1.45;max-width:300px}
+  .pop .d{font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.3px}
+  .pop .loc{font-weight:600;margin:3px 0 6px}
+  .pop .tag{display:inline-block;font-size:10px;padding:1.5px 6px;border-radius:9px;background:#eee;margin-bottom:6px;letter-spacing:.3px;text-transform:uppercase;font-weight:700}
+  .pop .tag.fatal{background:#ffe3e3;color:#a61e1e}
+  .pop .tag.injury{background:#fff4e6;color:#a34a00}
+  .pop .tag.property{background:#eef2f5;color:#3d5566}
+  .pop .what{margin:6px 0}
+  .pop .row{display:flex;gap:6px;font-size:12px;margin:2px 0}
+  .pop .row b{min-width:62px;color:#666;font-weight:600}
+  .pop .src{margin-top:7px;font-size:11.5px;color:#555}
+  .pop a{color:#1f6feb;text-decoration:none}
+  .leaflet-popup-content{margin:11px 13px}
+  #foot{font-size:10.5px;color:#9a9a9a;margin-top:14px}
+  @media (max-width:820px){#app{flex-direction:column}#side{width:100%;min-width:0;height:auto;max-height:46%;border-right:0;border-bottom:1px solid #ddd}#map{height:54%}}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <h1>Richmond Area Crash Tracker</h1>
+    <div class="sub">Media-reported vehicle crashes · May–Nov 2026 (one pre-window case)<br><span style="font-size:11px">From WTVR, NBC12, WRIC, VPM, Richmonder, Henrico Citizen, Richmond Times-Dispatch</span></div>
+    <div class="cards">
+      <div class="card"><div class="n" id="c-total">0</div><div class="l">Crashes</div></div>
+      <div class="card fatal"><div class="n" id="c-deaths">0</div><div class="l">Deaths</div></div>
+      <div class="card"><div class="n" id="c-inj">0</div><div class="l">Injured (as reported)</div></div>
+      <div class="card"><div class="n" id="c-fatalc">0</div><div class="l">Fatal crashes</div></div>
+    </div>
+
+    <h2>Jurisdiction</h2>
+    <div id="locf"></div>
+
+    <h2>Outcome</h2>
+    <div id="sevf"></div>
+
+    <h2>Month</h2>
+    <div class="bars" id="months"></div>
+
+    <div class="note">
+      Marker color = jurisdiction. Large markers with a dark ring = fatal crash.
+      Solid markers are placed from a street address or intersection; markers with a
+      dashed edge are interpolated from a highway mile marker; hollow markers are
+      approximate (the source names no landmark).
+      <div id="foot"></div>
+    </div>
+  </aside>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+const INC = __DATA__;
+const COLORS = {
+  "City of Richmond":"#1f6feb","Henrico County":"#e8590c",
+  "Chesterfield County":"#7048e8","Hanover County":"#2f9e44","New Kent County":"#c2255c","Charles City County":"#868e96"
+};
+const SEVLABEL = {fatal:"Fatal",injury:"Injury",property:"No reported injury"};
+const MLABEL = {};
+
+// ?lat=&lon=&z= deep-links to a spot (handy for sharing "look at this pin")
+const Q = new URLSearchParams(location.search);
+const vLat = parseFloat(Q.get('lat')), vLon = parseFloat(Q.get('lon')), vZ = parseInt(Q.get('z'),10);
+const map = L.map('map',{zoomControl:true,scrollWheelZoom:true})
+   .setView(isFinite(vLat)&&isFinite(vLon)?[vLat,vLon]:[37.56,-77.48], isFinite(vZ)?vZ:10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  attribution:'&copy; OpenStreetMap contributors', maxZoom:19
+}).addTo(map);
+
+// ?nocluster=1 disables clustering (useful for verifying individual placements)
+const NOCTL = new URLSearchParams(location.search).get('nocluster') === '1';
+const cluster = NOCTL ? {clearLayers(){map.eachLayer(l=>{if(l.options&&l.options.icon)map.removeLayer(l);});}, addLayers(l){l.forEach(m=>m.addTo(map));}}
+                     : L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:44,
+  iconCreateFunction:(c)=>{const n=c.getChildCount();const s=n>19?48:(n>9?42:36);
+    return L.divIcon({html:'<div style="background:#1b1b1b;color:#fff;border-radius:50%;width:'+s+'px;height:'+s+'px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:'+(s>40?14:12)+'px;box-shadow:0 0 0 3px rgba(255,255,255,.85)">'+n+'</div>',
+      className:'',iconSize:[s,s]});}});
+
+function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function links(s){
+  if(!s) return "";
+  return s.split(/;\s*/).filter(Boolean).map(u=>{
+    let host=u; try{host=new URL(u).hostname.replace(/^www\./,'');}catch(e){}
+    return '<a href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(host)+'</a>';
+  }).join(' · ');
+}
+function popup(x){
+  const tag = '<span class="tag '+x.severity+'">'+SEVLABEL[x.severity]+'</span>';
+  const CONF = {surveyed:"Location from a street address or intersection",
+                interpolated:"Location interpolated from a highway mile marker",
+                midpoint:"Approximate — the source names no landmark",
+                approximate:"Approximate — the source names no precise location"};
+  const conf = x.geo_confidence || "approximate";
+  return '<div class="pop">'+tag+
+    '<div class="d">'+esc(x.date)+(x.time?' · '+esc(x.time):'')+'</div>'+
+    '<div class="loc">'+esc(x.location)+'</div>'+
+    '<div style="font-size:10.5px;color:#8a8a8a;margin:-3px 0 6px">'+esc(CONF[conf]||CONF.approximate)+'</div>'+
+    '<div style="font-size:11.5px;color:#666;margin-bottom:6px">'+esc(x.locality)+'</div>'+
+    (x.what?'<div class="what">'+esc(x.what)+'</div>':'')+
+    (x.injuries?'<div class="row"><b>Injuries</b><span>'+esc(x.injuries)+'</span></div>':'')+
+    (x.fatalities?'<div class="row"><b>Fatalities</b><span>'+esc(x.fatalities)+'</span></div>':'')+
+    '<div class="src">'+esc(x.sources)+'<br>'+links(x.links)+'</div>'+
+  '</div>';
+}
+function icon(x){
+  const col = COLORS[x.locality]||"#868e96";
+  const fatal = x.severity==="fatal";
+  const r = fatal?9:(x.severity==="injury"?6.5:5);
+  const ring = fatal?'<circle cx="12" cy="12" r="10.5" fill="none" stroke="#1b1b1b" stroke-width="1.8"/>':'';
+  // solid = surveyed address/intersection; dashed ring = mile-marker interpolation;
+  // hollow = no landmark in the source (corridor midpoint)
+  const conf = x.geo_confidence || "approximate";
+  let fill, sw, dash;
+  if(conf==="surveyed"){ fill='fill="'+col+'" stroke="#fff"'; sw=1.2; dash=""; }
+  else if(conf==="interpolated"){ fill='fill="'+col+'" stroke="#fff"'; sw=1.2; dash=' stroke-dasharray="2 1.6"'; }
+  else { fill='fill="#fff" stroke="'+col+'"'; sw=2; dash=""; }
+  const html='<svg width="'+(r*2+6)+'" height="'+(r*2+6)+'" viewBox="0 0 24 24">'+
+     '<circle cx="12" cy="12" r="'+r+'" '+fill+' stroke-width="'+sw+'"'+dash+'/>'+ring+'</svg>';
+  return L.divIcon({html:html,className:'',iconSize:[r*2+6,r*2+6],iconAnchor:[r+3,r+3],popupAnchor:[0,-r-2]});
+}
+
+const state={loc:new Set(Object.keys(COLORS)),sev:new Set(["fatal","injury","property"]),month:null};
+const markers = INC.map(x=>{
+  const m=L.marker([x.lat,x.lon],{icon:icon(x)});
+  m.bindPopup(popup(x)); m._x=x; return m;
+});
+
+function render(){
+  cluster.clearLayers();
+  const vis=markers.filter(m=>state.loc.has(m._x.locality)&&state.sev.has(m._x.severity)&&(!state.month||m._x.month===state.month));
+  cluster.addLayers(vis);
+  const deaths=vis.reduce((a,b)=>a+(b._x.fatal_n||0),0);
+  const inj=vis.reduce((a,b)=>a+(b._x.inj_n||0),0);
+  document.getElementById('c-total').textContent=vis.length;
+  document.getElementById('c-deaths').textContent=deaths;
+  document.getElementById('c-inj').textContent=inj;
+  document.getElementById('c-fatalc').textContent=vis.filter(m=>m._x.severity==="fatal").length;
+}
+if(!NOCTL) map.addLayer(cluster);
+
+// jurisdiction filters
+const locCounts={}; INC.forEach(x=>locCounts[x.locality]=(locCounts[x.locality]||0)+1);
+document.getElementById('locf').innerHTML=Object.keys(COLORS).filter(k=>locCounts[k])
+ .map(k=>'<label class="f"><input type="checkbox" checked data-loc="'+k+'"><span class="sw '+(0)+'" style="background:'+COLORS[k]+'"></span>'+k+'<span class="cnt">'+locCounts[k]+'</span></label>').join('');
+document.querySelectorAll('#locf input').forEach(el=>el.onchange=()=>{
+  el.checked?state.loc.add(el.dataset.loc):state.loc.delete(el.dataset.loc);render();});
+
+// severity filters
+const sevCounts={}; INC.forEach(x=>sevCounts[x.severity]=(sevCounts[x.severity]||0)+1);
+document.getElementById('sevf').innerHTML=["fatal","injury","property"].map(s=>
+  '<label class="f"><input type="checkbox" checked data-sev="'+s+'"><span class="sw '+(s==="fatal"?"fatal":"")+'" style="background:'+
+  (s==="fatal"?"#c92a2a":(s==="injury"?"#f46036":"#7a8b99"))+'"></span>'+SEVLABEL[s]+
+  '<span class="cnt">'+(sevCounts[s]||0)+'</span></label>').join('');
+document.querySelectorAll('#sevf input').forEach(el=>el.onchange=()=>{
+  el.checked?state.sev.add(el.dataset.sev):state.sev.delete(el.dataset.sev);render();});
+
+// month bars (stacked by severity)
+const months=[...new Set(INC.map(x=>x.month))].sort();
+const maxM=Math.max(...months.map(m=>INC.filter(x=>x.month===m).length));
+document.getElementById('months').innerHTML=months.map(m=>{
+  const set=INC.filter(x=>x.month===m);
+  const f=set.filter(x=>x.severity==="fatal").length,i=set.filter(x=>x.severity==="injury").length,p=set.length-f-i;
+  const w=set.length/maxM*100;
+  return '<div class="bar" data-month="'+m+'" style="cursor:pointer"><span class="m">'+m.slice(2)+
+   '</span><span class="track"><span class="s" style="width:'+(f/set.length*w)+'%;background:#c92a2a"></span>'+
+   '<span class="s" style="width:'+(i/set.length*w)+'%;background:#f46036"></span>'+
+   '<span class="s" style="width:'+(p/set.length*w)+'%;background:#7a8b99"></span></span>'+
+   '<span class="cnt" style="margin-left:0">'+set.length+'</span></div>';
+}).join('');
+document.querySelectorAll('.bar').forEach(el=>el.onclick=()=>{
+  const m=el.dataset.month;
+  state.month = (state.month===m)?null:m;
+  document.querySelectorAll('.bar').forEach(b=>b.style.opacity=(state.month&&b.dataset.month!==state.month)?0.35:1);
+  render();
+});
+
+document.getElementById('foot').innerHTML = INC.length+' incidents · '+
+  INC.filter(x=>x.approx).length+' approximate locations · compiled from 7 local news sources. '+
+  'Locations are as reported by the outlets; hollow markers are approximate. '+
+  'This is a media-derived dataset, not an official crash census — '+
+  '<a href="https://github.com/szehui/rva-crash-map">source &amp; data</a>.';
+render();
+</script>
+</body>
+</html>

@@ -1,2 +1,5 @@
 *.bak
 .DS_Store
+__pycache__/
+*.pyc
+tracker/output/

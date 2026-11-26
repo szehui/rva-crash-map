@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy to ~/.config/rva-crash-tracker/config.json and edit. Every key is optional; defaults match the original author's layout. Environment variables override this file.",
+  "state_dir": "~/.hermes/state",
+  "token": "~/.hermes/google_token.json",
+  "output_dir": "~/repos/rva-crash-map/tracker/output",
+  "map_repo": "~/repos/rva-crash-map",
+  "live_url": "https://szehui.github.io/rva-crash-map",
+  "sheet_id": "PUT_YOUR_SPREADSHEET_ID_HERE"
+}

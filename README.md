@@ -47,6 +47,24 @@ Source skill and pipeline: `~/.hermes/skills/research/rva-crash-tracker`
 (`scripts/build_crash_map.py` reads the sheet and rebuilds the map + GeoJSON;
 `scripts/publish_map.sh` builds, audits, and publishes).
 
+## Run it yourself
+
+The complete pipeline — collector, map builder, geocoder audit, monthly rollup, and the
+agent prompts that drive the classification step — is packaged in [`tracker/`](tracker/)
+with setup instructions in [`docs/SETUP.md`](docs/SETUP.md).
+
+- [Setup](docs/SETUP.md) — OAuth, spreadsheet, config, first backfill, scheduling
+- [Operations](docs/OPERATIONS.md) — script map, fixing a bad pin, monthly counts
+- [Troubleshooting](docs/TROUBLESHOOTING.md) — the failures that actually happen
+- [Prompts](prompts/) — stage-2 classification and monthly write-up
+
+```bash
+git clone https://github.com/szehui/rva-crash-map.git
+cd rva-crash-map/tracker/scripts
+python3 rva_crash_tracker.py --mode backfill --days 30   # then classify
+bash publish_map.sh --no-push                            # build + audit
+```
+
 ## Credits
 
 Map tiles © OpenStreetMap contributors. Incident reporting © the outlets listed
