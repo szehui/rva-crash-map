@@ -54,7 +54,7 @@
 <div id="app">
   <aside id="side">
     <h1>Richmond Area Crash Tracker</h1>
-    <div class="sub">Media-reported vehicle crashes · May–Nov 2026 (one pre-window case)<br><span style="font-size:11px">Compiled November 25, 2026 from WTVR, NBC12, WRIC, VPM, Richmonder, Henrico Citizen, Richmond Times-Dispatch</span></div>
+    <div class="sub">Media-reported vehicle crashes · May–Nov 2026 (one pre-window case)<br><span style="font-size:11px">From WTVR, NBC12, WRIC, VPM, Richmonder, Henrico Citizen, Richmond Times-Dispatch</span></div>
     <div class="cards">
       <div class="card"><div class="n" id="c-total">0</div><div class="l">Crashes</div></div>
       <div class="card fatal"><div class="n" id="c-deaths">0</div><div class="l">Deaths</div></div>
@@ -190,8 +190,11 @@ document.querySelectorAll('.bar').forEach(el=>el.onclick=()=>{
   render();
 });
 
-document.getElementById('foot').textContent = INC.length+' incidents · '+
-  INC.filter(x=>x.approx).length+' approximate locations · compiled from 7 local news sources. Locations are as reported by the outlets; hollow markers are approximate (highway mile markers, block-level addresses). This is a media-derived dataset, not an official crash census — <a href="https://github.com/szehui/rva-crash-map">source &amp; data</a>.';
+document.getElementById('foot').innerHTML = INC.length+' incidents · '+
+  INC.filter(x=>x.approx).length+' approximate locations · compiled from 7 local news sources. '+
+  'Locations are as reported by the outlets; hollow markers are approximate. '+
+  'This is a media-derived dataset, not an official crash census — '+
+  '<a href="https://github.com/szehui/rva-crash-map">source &amp; data</a>.';
 render();
 </script>
 </body>
