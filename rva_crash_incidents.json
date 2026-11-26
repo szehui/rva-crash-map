@@ -39,7 +39,7 @@
   "lon": -77.525293446372,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
  },
@@ -61,7 +61,7 @@
   "lon": -77.52928,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM address node 9000 River Rd (Chesterfield); corrects a Census match to a Henrico River Rd"
  },
@@ -83,7 +83,7 @@
   "lon": -77.56399,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "Census address 10300 River Rd; between Chesdin Ridge Dr and Chesdin Park Dr"
  },
@@ -105,7 +105,7 @@
   "lon": -77.60707,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -171,7 +171,7 @@
   "lon": -77.31306,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "New Market Rd x Turner Rd geometry"
  },
@@ -193,7 +193,7 @@
   "lon": -77.54818,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -215,7 +215,7 @@
   "lon": -77.59533,
   "approx": true,
   "month": "2026-08",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "midpoint",
   "geo_how": "I-295 midpoint within Henrico (source gives no landmark)"
  },
@@ -237,7 +237,7 @@
   "lon": -77.506374,
   "approx": false,
   "month": "2026-08",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "Glen Allen, Henrico"
  },
@@ -259,7 +259,7 @@
   "lon": -77.29267,
   "approx": true,
   "month": "2026-08",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "midpoint",
   "geo_how": "I-295 midpoint in eastern Henrico"
  },
@@ -281,7 +281,7 @@
   "lon": -77.446842748487,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "900 W LEIGH ST, RICHMOND, VA, 23220"
  },
@@ -303,7 +303,7 @@
   "lon": -77.47756,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },
@@ -325,7 +325,7 @@
   "lon": -77.43948,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "I-95 x Chamberlayne Ave crossing (unsnapped: the snapped centreline point is the I-64/I-95 junction used by row 21)"
  },
@@ -347,7 +347,7 @@
   "lon": -77.574600052641,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "approximate",
   "geo_how": "9210 STONY POINT PKWY, RICHMOND, VA, 23235"
  },
@@ -369,7 +369,7 @@
   "lon": -77.43909,
   "approx": false,
   "month": "2026-09",
-  "pre_window": true,
+  "pre_window": false,
   "geo_confidence": "surveyed",
   "geo_how": "OSM shared intersection node (gap 0.0 m)"
  },

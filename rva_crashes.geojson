@@ -56,7 +56,7 @@
     "links": "https://www.wtvr.com/news/local-news/henrico-county/henrico-police-crash-sept-16-2026; https://www.wric.com/news/local-news/henrico-county/deadly-crash-west-broad-street-sept-11/; https://www.henricocitizen.com/fatal-west-broad-crash/; https://richmond.com/news/local/crime-courts/article_728df01f-8b6b-4476-925d-12b1779ef5c8.html",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
    }
@@ -86,7 +86,7 @@
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/chesterfield-crash-sept-15-2026; https://www.wric.com/news/local-news/chesterfield-county/man-killed-crash-river-road-che/; https://richmond.com/news/local/crime-courts/article_5b26f699-4436-451d-960d-4a16ae0a469f.html;https://www.wric.com/news/local-news/chesterfield-county/23-year-old-killed-river-road-crash/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM address node 9000 River Rd (Chesterfield); corrects a Census match to a Henrico River Rd"
    }
@@ -116,7 +116,7 @@
     "links": "https://www.wtvr.com/news/local-news/pedestrian-seriously-injured-after-crash-in-chesterfield-county; https://www.wric.com/news/local-news/chesterfield-county/man-hurt-hit-vehicle-river-road-chesterfield/; https://richmond.com/news/local/crime-courts/article_26acd5f5-3a03-4b66-b32e-e6b66bebdc06.html",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "Census address 10300 River Rd; between Chesdin Ridge Dr and Chesdin Park Dr"
    }
@@ -146,7 +146,7 @@
     "links": "https://www.wtvr.com/news/local-news/pump-road-patterson-interesection-dascham-crash-sept-9-2026; https://www.henricocitizen.com/dashcam-captures-rollover-crash-after-suv-runs-red-light-in-henrico/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -236,7 +236,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/cement-truck-crash-new-market-road/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "New Market Rd x Turner Rd geometry"
    }
@@ -266,7 +266,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/motorcycle-suv-crash-huguenot-road/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -296,7 +296,7 @@
     "links": "https://www.henricocitizen.com/deadly-crash-shuts-down-all-northbound-lanes-of-i-295-in-henrico/",
     "approx": true,
     "month": "2026-08",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "midpoint",
     "geo_how": "I-295 midpoint within Henrico (source gives no landmark)"
    }
@@ -326,7 +326,7 @@
     "links": "https://www.henricocitizen.com/two-17-year-olds-killed-another-injured-in-glen-allen-crash/; https://www.henricocitizen.com/teen-killed-in-henrico-crash-identified-as-glen-allen-high-school-student/",
     "approx": false,
     "month": "2026-08",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "Glen Allen, Henrico"
    }
@@ -356,7 +356,7 @@
     "links": "https://www.henricocitizen.com/pedestrian-hit-and-killed-on-i-295-in-eastern-henrico/",
     "approx": true,
     "month": "2026-08",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "midpoint",
     "geo_how": "I-295 midpoint in eastern Henrico"
    }
@@ -386,7 +386,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/crash-into-home-leigh-street-sept-7/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "900 W LEIGH ST, RICHMOND, VA, 23220"
    }
@@ -416,7 +416,7 @@
     "links": "https://www.wric.com/news/local-news/henrico-county/cyclist-hospitalized-henrico/; https://richmond.com/news/local/crime-courts/article_68036e45-9163-4242-be4e-ab11899b088e.html",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
@@ -446,7 +446,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/i-95-vehicle-crash-sept-12/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "I-95 x Chamberlayne Ave crossing (unsnapped: the snapped centreline point is the I-64/I-95 junction used by row 21)"
    }
@@ -476,7 +476,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/man-dead-crash-parking-lot/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "approximate",
     "geo_how": "9210 STONY POINT PKWY, RICHMOND, VA, 23235"
    }
@@ -506,7 +506,7 @@
     "links": "https://www.wric.com/news/local-news/richmond/man-hit-injured-electric-scooter-downtown/",
     "approx": false,
     "month": "2026-09",
-    "pre_window": true,
+    "pre_window": false,
     "geo_confidence": "surveyed",
     "geo_how": "OSM shared intersection node (gap 0.0 m)"
    }
