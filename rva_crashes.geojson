@@ -6,8 +6,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.442,
-     37.73
+     -77.44875,
+     37.70211
     ]
    },
    "properties": {
@@ -25,7 +25,9 @@
     "sources": "WTVR CBS 6; WRIC 8News; NBC12 WWBT",
     "links": "https://www.wtvr.com/news/local-news/hanover-county/crash-sept-18; https://www.wric.com/news/local-news/hanover-county/deadly-two-vehicle-crash-i-95-sept-17/; https://www.12onyourside.com/2026/09/18/1-dead-i-95-south-crash/",
     "approx": true,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "interpolated",
+    "geo_how": "OSM mile-marker 88 node on I-95"
    }
   },
   {
@@ -52,7 +54,9 @@
     "sources": "WTVR CBS 6; WRIC 8News; Henrico Citizen; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/henrico-county/henrico-police-crash-sept-16-2026; https://www.wric.com/news/local-news/henrico-county/deadly-crash-west-broad-street-sept-11/; https://www.henricocitizen.com/fatal-west-broad-crash/; https://richmond.com/news/local/crime-courts/article_728df01f-8b6b-4476-925d-12b1779ef5c8.html",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
    }
   },
   {
@@ -79,7 +83,9 @@
     "sources": "WTVR CBS 6; WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/chesterfield-crash-sept-15-2026; https://www.wric.com/news/local-news/chesterfield-county/man-killed-crash-river-road-che/; https://richmond.com/news/local/crime-courts/article_5b26f699-4436-451d-960d-4a16ae0a469f.html;https://www.wric.com/news/local-news/chesterfield-county/23-year-old-killed-river-road-crash/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "9000 RIVER RD, RICHMOND, VA, 23229"
    }
   },
   {
@@ -87,8 +93,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.612,
-     37.582
+     -77.56399,
+     37.26588
     ]
    },
    "properties": {
@@ -105,8 +111,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/pedestrian-seriously-injured-after-crash-in-chesterfield-county; https://www.wric.com/news/local-news/chesterfield-county/man-hurt-hit-vehicle-river-road-chesterfield/; https://richmond.com/news/local/crime-courts/article_26acd5f5-3a03-4b66-b32e-e6b66bebdc06.html",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "Census address 10300 River Rd; between Chesdin Ridge Dr and Chesdin Park Dr"
    }
   },
   {
@@ -133,7 +141,9 @@
     "sources": "WTVR CBS 6; Henrico Citizen",
     "links": "https://www.wtvr.com/news/local-news/pump-road-patterson-interesection-dascham-crash-sept-9-2026; https://www.henricocitizen.com/dashcam-captures-rollover-crash-after-suv-runs-red-light-in-henrico/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "PUMP RD & PATTERSON AVE, RICHMOND, VA, 23238"
    }
   },
   {
@@ -160,7 +170,9 @@
     "sources": "WTVR CBS 6; NBC12 WWBT; WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/henrico-county/woman-hit-by-car-w-broad-street-tuckernuck-drive-sept-17-2026; https://www.12onyourside.com/2026/09/17/pedestrian-hospitalized-after-hit-by-car-henrico/; https://www.wric.com/news/local-news/henrico-county/woman-hit-by-vehicle-tuckernuck-drive/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "W BROAD ST & TUCKERNUCK DR, RICHMOND, VA, 23294"
    }
   },
   {
@@ -168,26 +180,28 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.06,
-     37.442
+     -76.9777,
+     37.488
     ]
    },
    "properties": {
     "row": 8,
     "date": "2026-09-18",
-    "time": "",
-    "location": "I64, MM217",
-    "locality": "Charles City County",
-    "what": "",
+    "time": "~1:02 a.m.",
+    "location": "I-64 westbound near mile marker 217, New Kent County",
+    "locality": "New Kent County",
+    "what": "Single-vehicle crash: a 2023 GMCP pickup truck overturned and caught fire. Both occupants died at the scene; state police were working to confirm identities and notify next of kin. Crews said the crash was reported early Friday morning.",
     "injuries": "",
-    "fatalities": "2",
+    "fatalities": "2 (driver and passenger, both died at scene)",
     "fatal_n": 2,
     "inj_n": 0,
     "severity": "fatal",
-    "sources": "NKCC",
+    "sources": "New Kent \u2013 Charles City Chronicle",
     "links": "https://nkccnews.com/local-news/2026/09/18/early-morning-crash-claims-lives-of-two-people-in-new-kent/",
     "approx": true,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-64 MM 217, interpolated between OSM exits 214 and 220 (New Kent)"
    }
   },
   {
@@ -195,8 +209,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.33,
-     37.47
+     -77.31306,
+     37.42977
     ]
    },
    "properties": {
@@ -213,8 +227,10 @@
     "severity": "injury",
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/henrico-county/cement-truck-crash-new-market-road/",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "New Market Rd x Turner Rd geometry"
    }
   },
   {
@@ -241,7 +257,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/richmond/motorcycle-suv-crash-huguenot-road/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "N HUGUENOT RD & CHEROKEE RD, RICHMOND, VA, 23235"
    }
   },
   {
@@ -249,8 +267,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.43,
-     37.585
+     -77.59533,
+     37.66483
     ]
    },
    "properties": {
@@ -268,7 +286,9 @@
     "sources": "Henrico Citizen",
     "links": "https://www.henricocitizen.com/deadly-crash-shuts-down-all-northbound-lanes-of-i-295-in-henrico/",
     "approx": true,
-    "month": "2026-08"
+    "month": "2026-08",
+    "geo_confidence": "midpoint",
+    "geo_how": "I-295 midpoint within Henrico (source gives no landmark)"
    }
   },
   {
@@ -295,7 +315,9 @@
     "sources": "Henrico Citizen",
     "links": "https://www.henricocitizen.com/two-17-year-olds-killed-another-injured-in-glen-allen-crash/; https://www.henricocitizen.com/teen-killed-in-henrico-crash-identified-as-glen-allen-high-school-student/",
     "approx": false,
-    "month": "2026-08"
+    "month": "2026-08",
+    "geo_confidence": "approximate",
+    "geo_how": "Glen Allen, Henrico"
    }
   },
   {
@@ -303,8 +325,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.3,
-     37.52
+     -77.29267,
+     37.49218
     ]
    },
    "properties": {
@@ -322,7 +344,9 @@
     "sources": "Henrico Citizen",
     "links": "https://www.henricocitizen.com/pedestrian-hit-and-killed-on-i-295-in-eastern-henrico/",
     "approx": true,
-    "month": "2026-08"
+    "month": "2026-08",
+    "geo_confidence": "midpoint",
+    "geo_how": "I-295 midpoint in eastern Henrico"
    }
   },
   {
@@ -349,7 +373,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/richmond/crash-into-home-leigh-street-sept-7/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "900 W LEIGH ST, RICHMOND, VA, 23220"
    }
   },
   {
@@ -376,7 +402,9 @@
     "sources": "WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wric.com/news/local-news/henrico-county/cyclist-hospitalized-henrico/; https://richmond.com/news/local/crime-courts/article_68036e45-9163-4242-be4e-ab11899b088e.html",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "WOODMAN RD & DELTA CIR, RICHMOND, VA, 23228"
    }
   },
   {
@@ -384,8 +412,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.452,
-     37.566
+     -77.43813,
+     37.55083
     ]
    },
    "properties": {
@@ -402,8 +430,10 @@
     "severity": "property",
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/richmond/i-95-vehicle-crash-sept-12/",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-95 x Chamberlayne Ave geometry"
    }
   },
   {
@@ -430,7 +460,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/richmond/man-dead-crash-parking-lot/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "9210 STONY POINT PKWY, RICHMOND, VA, 23235"
    }
   },
   {
@@ -457,7 +489,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/richmond/man-hit-injured-electric-scooter-downtown/",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "5 N BLVD, RICHMOND, VA, 23220"
    }
   },
   {
@@ -465,8 +499,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.64,
-     37.505
+     -77.56515,
+     37.40935
     ]
    },
    "properties": {
@@ -483,8 +517,10 @@
     "severity": "injury",
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/chesterfield-county/3-drivers-hurt-crash-route-288/",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "VA-288 x Courthouse Rd geometry"
    }
   },
   {
@@ -511,7 +547,9 @@
     "sources": "WTVR CBS 6; NBC12; WRIC 8News; Richmond Times-Dispatch; Henrico Citizen",
     "links": "https://richmond.com/news/local/crime-courts/article_30f1297d-3e74-4b1d-8c4d-ede95e06497d.html;https://www.12onyourside.com/2026/10/01/glen-allen-man-dies-hanover-crash/;https://www.henricocitizen.com/glen-allen-man-dies-in-single-vehicle-crash-in-hanover/;https://www.henricocitizen.com/henriconewsflashoct12026/;https://www.wric.com/news/local-news/hanover-county/glen-allen-man-killed-crash-ashland-road/;https://www.wtvr.com/news/local-news/ashland-road-fatal-crash-oct-1-2026",
     "approx": false,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "approximate",
+    "geo_how": "15200 ASHLAND RD, GLEN ALLEN, VA, 23059"
    }
   },
   {
@@ -519,8 +557,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.443,
-     37.545
+     -77.43813,
+     37.55083
     ]
    },
    "properties": {
@@ -537,8 +575,10 @@
     "severity": "fatal",
     "sources": "WTVR CBS 6; 12 On Your Side (WWBT); WRIC 8News; Richmond Times-Dispatch; Henrico Citizen",
     "links": "https://www.wtvr.com/news/local-news/richmond/ashtain-noel-davis-dead-motorcycle-driver-hit-and-run-interstate-64-95-ramp-sept-26-2026;https://www.12onyourside.com/2026/09/26/police-hit-and-run-kills-28-year-old-motorcyclist/;https://www.wric.com/news/local-news/richmond/man-dead-hit-and-run-interstate-ramp/;https://richmond.com/news/local/crime/article_1c4e0ec6-587b-4dcd-9c4c-22265fd9c07c.html;https://www.henricocitizen.com/henrico-firefighter-killed-in-richmond-hit-and-run/;https://www.12onyourside.com/2026/10/10/funeral-service-held-henrico-firefighter-killed-hit-and-run/;https://www.wric.com/news/local-news/richmond/funeral-service-henrico-firefighter-killed-cathedral/;https://www.henricocitizen.com/henrico-firefighter-killed-in-hit-and-run-remembered-as-the-perfect-rookie/;https://richmond.com/news/local/crime-courts/article_b34a45e4-84ff-44e1-9348-9263919bacda.html",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-64 x I-95 interchange geometry"
    }
   },
   {
@@ -546,8 +586,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.442,
-     37.73
+     -77.4487,
+     37.72102
     ]
    },
    "properties": {
@@ -564,8 +604,10 @@
     "severity": "property",
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/hanover-county/multi-vehicle-crash-i-95-hanover/",
-    "approx": true,
-    "month": "2026-09"
+    "approx": false,
+    "month": "2026-09",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-95 x Lewistown Rd geometry (Exit 89)"
    }
   },
   {
@@ -573,8 +615,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.63,
-     37.638
+     -77.59765,
+     37.65173
     ]
    },
    "properties": {
@@ -592,7 +634,9 @@
     "sources": "WRIC 8News; WTVR CBS 6",
     "links": "https://www.wric.com/news/local-news/henrico-county/deadly-single-vehicle-crash-route-250-i-64/;https://www.wtvr.com/news/local-news/henrico-county/one-dead-sept-28-2026",
     "approx": true,
-    "month": "2026-09"
+    "month": "2026-09",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-64 MM 178 (article text); exit 178 = Short Pump/Rt 250"
    }
   },
   {
@@ -600,8 +644,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.432,
-     37.348
+     -77.37793,
+     37.34994
     ]
    },
    "properties": {
@@ -618,8 +662,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/person-airlifted-after-crash-involving-truck-hauling-vehicles-in-chesterfield-county; https://www.wric.com/news/local-news/chesterfield-county/one-hurt-flown-medflight-crash-west-hundred-road/",
-    "approx": true,
-    "month": "2026-10"
+    "approx": false,
+    "month": "2026-10",
+    "geo_confidence": "surveyed",
+    "geo_how": "Census address 900 W Hundred Rd, Chester"
    }
   },
   {
@@ -627,8 +673,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.405,
-     37.345
+     -77.39827,
+     37.31166
     ]
    },
    "properties": {
@@ -645,8 +691,10 @@
     "severity": "fatal",
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/dump-truck-crash-oct-6-2026; https://www.12onyourside.com/2026/10/06/1-dead-after-tractor-trailer-crash-i-95-colonial-heights/; https://www.wric.com/news/local-news/chesterfield-county/deadly-crash-i-95-woods-edge-road/; https://www.wric.com/news/local-news/chesterfield-county/richmond-man-killed-dump-truck-crash-i-95/; https://richmond.com/news/local/crime-courts/article_d2327662-23fb-46ac-8214-18080862ac98.html",
-    "approx": true,
-    "month": "2026-10"
+    "approx": false,
+    "month": "2026-10",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-95 x Woods Edge Rd geometry (Exit 58)"
    }
   },
   {
@@ -654,8 +702,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.47,
-     37.76
+     -77.46061,
+     37.80989
     ]
    },
    "properties": {
@@ -673,7 +721,9 @@
     "sources": "NBC12",
     "links": "https://www.12onyourside.com/2026/10/08/tractor-trailer-carrying-peanuts-overturns-i-95-hanover/",
     "approx": true,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "midpoint",
+    "geo_how": "I-95 midpoint within Hanover (source gives no landmark)"
    }
   },
   {
@@ -700,7 +750,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/woman-struck-by-van-oct-11-2026",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "12000 JEFFERSON DAVIS HWY, CHESTER, VA, 23831"
    }
   },
   {
@@ -727,7 +779,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/police-identify-man-who-suffered-medical-emergency-before-fatal-chesterfield-crash",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "2700 OLD GUN RD W, MIDLOTHIAN, VA, 23113"
    }
   },
   {
@@ -754,7 +808,9 @@
     "sources": "WTVR CBS 6; NBC12; WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/driver-crashes-into-bella-italia-oct-15-2026;https://www.12onyourside.com/2026/10/15/car-crashes-into-restaurant-no-one-injured/;https://www.wric.com/news/local-news/chesterfield-county/vehicle-into-building-iron-bridge-road/",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "6400 IRON BRIDGE RD, RICHMOND, VA, 23234"
    }
   },
   {
@@ -781,7 +837,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/driver-trapped-hull-street-crash-oct-24-2026",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "5700 HULL STREET RD, RICHMOND, VA, 23224"
    }
   },
   {
@@ -789,8 +847,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.45,
-     37.72
+     -77.45327,
+     37.71936
     ]
    },
    "properties": {
@@ -807,8 +865,10 @@
     "severity": "injury",
     "sources": "NBC12; WRIC 8News",
     "links": "https://www.12onyourside.com/2026/10/27/man-hit-by-car-while-crossing-street-hanover/; https://www.wric.com/news/local-news/hanover-county/pedestrian-hit-lakeridge-parkway-oct-26/",
-    "approx": true,
-    "month": "2026-10"
+    "approx": false,
+    "month": "2026-10",
+    "geo_confidence": "surveyed",
+    "geo_how": "Lakeridge Pkwy x Lewistown Rd geometry"
    }
   },
   {
@@ -835,7 +895,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/pedestrian-seriously-hurt-after-being-struck-by-vehicle-in-henrico",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "W BROAD ST & LIBBIE AVE, RICHMOND, VA, 23230"
    }
   },
   {
@@ -843,8 +905,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.578,
-     37.655
+     -77.58148,
+     37.67099
     ]
    },
    "properties": {
@@ -861,8 +923,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; NBC12; WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/henrico-county/bicyclist-hurt-glen-allen-oct-15-2026;https://www.12onyourside.com/2026/10/15/bicyclist-seriously-injured-nuckols-road-crash/;https://www.wric.com/news/local-news/henrico-county/bicyclist-hurt-crash-i-295-overpass/;https://richmond.com/news/local/crime-courts/article_13bd3e26-6793-40c3-999f-fb4258316b3c.html",
-    "approx": true,
-    "month": "2026-10"
+    "approx": false,
+    "month": "2026-10",
+    "geo_confidence": "surveyed",
+    "geo_how": "Nuckols Rd x I-295 geometry"
    }
   },
   {
@@ -889,7 +953,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/man-seriously-hurt-after-e-bike-crash-in-chesterfield-county",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "FOREST HILL AVE & BUFORD RD, RICHMOND, VA, 23235"
    }
   },
   {
@@ -897,8 +963,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.42,
-     37.375
+     -77.4106,
+     37.29308
     ]
    },
    "properties": {
@@ -915,8 +981,10 @@
     "severity": "fatal",
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/man-dies-after-medical-emergency-causes-crash-at-chesterfield-county-car-dealership",
-    "approx": true,
-    "month": "2026-10"
+    "approx": false,
+    "month": "2026-10",
+    "geo_confidence": "surveyed",
+    "geo_how": "Census address 16701 Jefferson Davis Hwy (Eagle Motors)"
    }
   },
   {
@@ -943,7 +1011,9 @@
     "sources": "WRIC 8News; WTVR CBS 6; Henrico Citizen",
     "links": "https://www.wric.com/news/local-news/richmond/video-van-crash-west-end-thrift/; https://www.wtvr.com/news/local-news/hanover-man-charged-with-dwi-after-crashing-into-west-end-thrift; https://www.henricocitizen.com/henrico-man-charged-with-dwi-after-crashing-into-west-end-thrift/",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "7800 W BROAD ST, RICHMOND, VA, 23294"
    }
   },
   {
@@ -970,7 +1040,9 @@
     "sources": "WRIC 8News; WTVR CBS 6; NBC12 (WWBT); Richmond Times-Dispatch",
     "links": "https://www.wric.com/news/local-news/chesterfield-county/3-hospitalized-crash-spring-run-road/; https://www.wtvr.com/news/local-news/chesterfield-county/four-hospitalized-following-chesterfield-county-crash-on-spring-run-road; https://www.wric.com/news/local-news/chesterfield-county/baby-killed-crash-spring-run-road/; https://www.wric.com/news/local-news/chesterfield-county/baby-dies-spring-run-road-crash/; https://www.12onyourside.com/2026/10/29/one-dead-after-chesterfield-crash/; https://richmond.com/news/local/crime-courts/article_96477175-992a-42b5-b10d-cab967f6419f.html; https://www.wtvr.com/news/local-news/family-mourns-10-month-old-girl-killed-in-chesterfield-crash-mother-faces-dui-manslaughter-charge; https://www.wric.com/news/local-news/chesterfield-county/mother-charged-chesterfield-crash-dui-manslaughter/",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "10000 SPRING RUN RD, CHESTERFIELD, VA, 23832"
    }
   },
   {
@@ -997,7 +1069,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/1-with-critical-injuries-after-two-vehicle-collision-in-chesterfield-county; https://www.12onyourside.com/2026/10/30/one-person-dead-another-hurt-car-crash/; https://www.wric.com/news/local-news/chesterfield-county/man-dead-crash-harrowgate-road/",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "13000 HARROWGATE RD, CHESTER, VA, 23831"
    }
   },
   {
@@ -1024,7 +1098,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Henrico Citizen",
     "links": "https://www.wtvr.com/news/local-news/woman-killed-after-being-struck-by-vehicle-near-richmond-international-airport; https://www.12onyourside.com/2026/10/30/woman-dies-after-hit-by-car-henrico/; https://www.wric.com/news/local-news/henrico-county/61-year-old-sc-woman-killed-williamsburg-road-crash/; https://www.wric.com/news/local-news/henrico-county/woman-killed-pedestrian-crash-williamsburg-road/; https://www.henricocitizen.com/police-identify-woman-killed-williamsburg-road-pedestrian-crash/",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "WILLIAMSBURG RD & S AIRPORT DR, SANDSTON, VA, 23150"
    }
   },
   {
@@ -1051,7 +1127,9 @@
     "sources": "NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch; Henrico Citizen",
     "links": "https://www.12onyourside.com/2026/10/31/pedestrian-killed-crash-police-need-help-identifying-victim/; https://www.wric.com/news/local-news/henrico-county/pedestrian-crash-police-seek-help-identifying/; https://richmond.com/news/local/crime/article_27f78390-3aaa-4a58-a154-58c8a7a7ad4c.html; https://www.henricocitizen.com/henrico-police-work-to-identify-man-killed-while-walking-near-staples-mill-road/; https://www.wric.com/news/local-news/henrico-county/31-year-old-man-killed-crash-identified/; https://richmond.com/news/local/crime-courts/article_5b18872d-bf84-452d-807e-1f5baa68a8db.html",
     "approx": false,
-    "month": "2026-10"
+    "month": "2026-10",
+    "geo_confidence": "approximate",
+    "geo_how": "STAPLES MILL RD & BREMNER BLVD, HENRICO, VA, 23228"
    }
   },
   {
@@ -1078,7 +1156,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/man-killed-child-injured-hit-by-car--chester-forest-drive-halloween-party-nov-1-2026; https://www.12onyourside.com/2026/11/01/man-dies-after-being-hit-by-car-child-injured-well/; https://www.wric.com/news/local-news/chesterfield-county/19-y-o-dead-12-y-o-injured-hit-by-car/; https://richmond.com/news/local/crime-courts/article_ff435749-8688-4ffa-a123-153dbc329da9.html; https://www.12onyourside.com/2026/11/04/court-document-reveals-new-details-after-man-died-child-hurt-hit-and-run/; https://www.wric.com/news/local-news/chesterfield-county/deadly-hit-and-run-chester-forest-lane/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "8800 CHESTER FOREST LN, NORTH CHESTERFIELD, VA, 23237"
    }
   },
   {
@@ -1105,7 +1185,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/hanover-county/driver-hospitalized-crash-fire-station/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "16861 MOUNTAIN RD, MONTPELIER, VA, 23192"
    }
   },
   {
@@ -1132,7 +1214,9 @@
     "sources": "WRIC 8News; NBC12 (WWBT)",
     "links": "https://www.wric.com/news/local-news/richmond/water-pressure-issues-power-outage-nov-2/; https://www.12onyourside.com/2026/11/03/richmond-low-water-pressure-caused-by-power-outage/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "IDLEWOOD AVE & S HARRISON ST, RICHMOND, VA, 23220"
    }
   },
   {
@@ -1140,8 +1224,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.3,
-     37.525
+     -77.29468,
+     37.48976
     ]
    },
    "properties": {
@@ -1158,8 +1242,10 @@
     "severity": "injury",
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/henrico-county/person-hospitalized-driver-asleep-i295-north/",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-295 x Portugee Rd geometry"
    }
   },
   {
@@ -1167,8 +1253,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.462,
-     37.435
+     -77.41531,
+     37.38324
     ]
    },
    "properties": {
@@ -1186,7 +1272,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/1-dead-after-i-95-crash-in-chesterfield-county-near-route-288; https://www.wtvr.com/news/local-news/fatal-crash-nov-4-2026; https://www.12onyourside.com/2026/11/04/1-dead-chesterfield-crash-i-95/; https://www.wric.com/news/local-news/chesterfield-county/chesterfield-man-killed-crash-i-95-nov-3/",
     "approx": true,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-95 MM 62.8, bracketed by OSM exits 62 and 64"
    }
   },
   {
@@ -1213,7 +1301,9 @@
     "sources": "NBC12 (WWBT)",
     "links": "https://www.12onyourside.com/2026/11/06/2-people-taken-hospital-after-vehicle-crashes-into-henrico-building/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "GAYTON RD & RIDGEFIELD PKWY, RICHMOND, VA, 23233"
    }
   },
   {
@@ -1240,7 +1330,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/richmond/killed-crossing-shockoe-bottom-street-nov-6-2026; https://www.12onyourside.com/2026/11/06/police-search-driver-deadly-hit-and-run/; https://www.wric.com/news/local-news/richmond/75-year-old-man-killed-hit-and-run-nov-6/; https://www.wric.com/news/local-news/richmond/deadly-hit-and-run-shockoe-bottom-nov-6/; https://richmond.com/news/local/crime-courts/article_1fc427ca-ff05-434d-b6ac-2103ffac1bc0.html; https://www.12onyourside.com/2026/11/09/richmond-area-musicians-remember-folk-singer-killed-hit-and-run/; https://www.wric.com/news/local-news/richmond/local-musician-friends-remember-crash/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "E MAIN ST & N 21ST ST, RICHMOND, VA, 23223"
    }
   },
   {
@@ -1267,7 +1359,9 @@
     "sources": "WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wric.com/news/local-news/richmond/man-charged-98-year-old-hit-by-car-killed/; https://richmond.com/news/local/crime-courts/article_aad14f35-9430-4216-9dd4-ddde946b3ade.html",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "E GRACE ST & N 9TH ST, RICHMOND, VA, 23219"
    }
   },
   {
@@ -1294,7 +1388,9 @@
     "sources": "NBC12 (WWBT); WTVR CBS 6; WRIC 8News",
     "links": "https://www.12onyourside.com/2026/11/07/crash-brings-down-power-lines-closes-skipwith-road-henrico/; https://www.wtvr.com/news/local-news/henrico-county/crash-closes-skipwith-road-nov-6-2026; https://www.wric.com/news/local-news/henrico-county/utility-pole-snapped-crash-skipwith-road/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "SKIPWITH RD & ANOKA RD, RICHMOND, VA, 23229"
    }
   },
   {
@@ -1302,8 +1398,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.56,
-     37.622
+     -77.54147,
+     37.61587
     ]
    },
    "properties": {
@@ -1321,7 +1417,9 @@
     "sources": "WTVR CBS 6; WRIC 8News; NBC12 (WWBT); Henrico Citizen; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/two-killed-in-crash-on-i-64-westbound-in-henrico-county-police-say; https://www.wric.com/news/local-news/henrico-county/two-dead-crash-vehicle-fire-i-64/; https://www.12onyourside.com/2026/11/08/single-vehicle-crash-kills-two-people-i-64/; https://www.wric.com/news/local-news/henrico-county/henrico-crash-vehicle-fire-i64/; https://www.12onyourside.com/2026/11/09/capital-run-club-founder-dies-crash/; https://www.henricocitizen.com/police-identify-2-men-killed-in-crash-on-i-64-west-in-henrico/; https://richmond.com/news/local/crime-courts/article_2913978e-eaf5-470b-99e5-b4f7a2f0ef4c.html; https://www.wric.com/news/local-news/richmond/capital-run-club-late-founder/; https://www.12onyourside.com/2026/11/12/more-than-100-people-walk-richmond-honor-capitol-run-club-founder-killed-crash/",
     "approx": true,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-64 MM 182.2, bracketed by OSM exits 181 and 183"
    }
   },
   {
@@ -1330,7 +1428,7 @@
     "type": "Point",
     "coordinates": [
      -77.471,
-     37.733
+     37.73314
     ]
    },
    "properties": {
@@ -1347,8 +1445,10 @@
     "severity": "fatal",
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/hanover-county/richmond-man-identified-as-pedestrian-killed-in-ashland-hit-and-run; https://www.12onyourside.com/2026/11/10/richmond-man-found-dead-after-hit-and-run-ashland/; https://www.wric.com/news/local-news/hanover-county/64-yo-killed-hit-and-run-ashland/; https://richmond.com/news/local/crime-courts/article_d483ca7e-98c3-45f0-a056-8411bb978b34.html; https://www.wric.com/news/local-news/hanover-county/ashland-police-vehicle-deadly-hit-and-run/; https://www.wtvr.com/news/local-news/hanover-county/ashland-hit-and-run-vehicle-of-interest-nov-25-2026",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "Census address 12100 Washington Hwy, Ashland"
    }
   },
   {
@@ -1356,8 +1456,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.395,
-     37.305
+     -77.39521,
+     37.30708
     ]
    },
    "properties": {
@@ -1375,7 +1475,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/tar-truck-crash-nov-9-2026; https://www.12onyourside.com/2026/11/09/crash-tar-spill-closes-i-95-south/; https://www.wric.com/news/local-news/chesterfield-county/two-hurt-tar-spill-crash-i-95/",
     "approx": true,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-95 MM 57.9, bracketed by OSM exits 54 and 58"
    }
   },
   {
@@ -1402,7 +1504,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/motorcyclist-dies-after-crash-on-midlothian-turnpike-in-chesterfield-county-police-say; https://www.12onyourside.com/2026/11/10/motorcyclist-killed-crash-midlothian-turnpike/; https://www.wric.com/news/local-news/chesterfield-county/motorcyclist-crash-midlothian-turnpike-nov-9/; https://richmond.com/news/local/crime-courts/article_1ed72ecd-702c-4239-af45-199ec3a39d6a.html",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "7700 MIDLOTHIAN TPKE, RICHMOND, VA, 23235"
    }
   },
   {
@@ -1429,7 +1533,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/chesterfield-county/driver-child-sedan-tow-truck-chesterfield/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "GATEWAY CENTRE PKWY & MIDLOTHIAN TPKE, RICHMOND, VA, 23235"
    }
   },
   {
@@ -1437,8 +1543,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.64,
-     37.645
+     -77.6299,
+     37.66313
     ]
    },
    "properties": {
@@ -1455,8 +1561,10 @@
     "severity": "injury",
     "sources": "VDOT (511 Virginia traffic alert); Virginia Statewide Incidents; Daily Voice",
     "links": "https://x.com/VaDOTRVA/status/2120278259942494447; https://dailyvoice.com/article/major-crash-shuts-down-multiple-i-64-lanes-in-virginia-during-rush-hour-developing/",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-64 x N Gayton Rd overpass geometry (article cites MM 176.3; OSM exits 177/178 are coincident, so the named cross street is the more reliable anchor)"
    }
   },
   {
@@ -1464,8 +1572,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.34,
-     37.545
+     -77.32882,
+     37.58113
     ]
    },
    "properties": {
@@ -1482,8 +1590,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; WRIC 8News; Henrico Citizen",
     "links": "https://www.wtvr.com/news/local-news/henrico-county/vsi-henrico-police-chase-nov-11-2026; https://www.wric.com/news/local-news/henrico-county/pursuit-crash-creighton-road-hanover-line/; https://www.henricocitizen.com/henrico-police-chase-ends-in-life-threatening-crash/",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "Creighton Rd x I-295 geometry"
    }
   },
   {
@@ -1510,7 +1620,9 @@
     "sources": "WTVR CBS 6; WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/suv-involved-in-wednesday-police-chase-crashes-into-another-leaving-driver-seriously-injured; https://www.wric.com/news/local-news/richmond/sedan-driver-hurt-i-95-pursuit-crash/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "N 3RD ST & E MAIN ST, RICHMOND, VA, 23219"
    }
   },
   {
@@ -1518,8 +1630,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.462,
-     37.442
+     -77.4232,
+     37.44748
     ]
    },
    "properties": {
@@ -1537,7 +1649,9 @@
     "sources": "NBC12 (WWBT)",
     "links": "https://www.12onyourside.com/2026/11/12/one-person-hospitalized-after-i-95-crash-thursday-morning/",
     "approx": true,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "interpolated",
+    "geo_how": "I-95 MM 67, bracketed by OSM exits 62 and 69"
    }
   },
   {
@@ -1545,8 +1659,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.432,
-     37.535
+     -77.43034,
+     37.54702
     ]
    },
    "properties": {
@@ -1563,8 +1677,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/richmond/good-samaritans-i-95-crash-nov-13-2026; https://www.wtvr.com/news/local-news/i-95-crash-richmond-nov-13-2026; https://www.12onyourside.com/2026/11/13/woman-fighting-life-after-serious-crash-i-95/; https://www.wric.com/news/local-news/richmond/woman-hurt-airborne-crash-i-95-overpass/",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "I-95 x N 7th St geometry"
    }
   },
   {
@@ -1591,7 +1707,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/hanover-county/driver-killed-fiery-crash-hickory-hill-road-nov-14-2026; https://www.12onyourside.com/2026/11/14/fiery-crash-hanover-kills-one-person/; https://www.wric.com/news/local-news/hanover-county/catastrophic-damage-person-dead-fiery-crash/; https://richmond.com/news/local/crime-courts/article_4e5b8a00-a7ea-4842-9c06-5b11df8ea8c9.html",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "9300 HICKORY HILL RD, ASHLAND, VA, 23005"
    }
   },
   {
@@ -1599,8 +1717,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.462,
-     37.435
+     -77.4091,
+     37.37801
     ]
    },
    "properties": {
@@ -1617,8 +1735,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/police-chase-ends-crash-route-288-nov-15-2026; https://www.12onyourside.com/2026/11/15/suspect-custody-following-police-chase-chesterfield/; https://www.wric.com/news/local-news/chesterfield-county/30-minute-multi-county-police-chase-ends-in-crash-off-i-95-in-chesterfield/",
-    "approx": true,
-    "month": "2026-11"
+    "approx": false,
+    "month": "2026-11",
+    "geo_confidence": "surveyed",
+    "geo_how": "VA-288 x I-95 geometry"
    }
   },
   {
@@ -1645,7 +1765,9 @@
     "sources": "NBC12 (WWBT)",
     "links": "https://www.12onyourside.com/2026/11/16/one-person-hospitalized-after-car-crashes-into-chesterfield-store/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "7700 MIDLOTHIAN TPKE, RICHMOND, VA, 23235"
    }
   },
   {
@@ -1672,7 +1794,9 @@
     "sources": "WTVR CBS 6; Hoodline",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/crash-nov-17-2026; https://hoodline.com/2026/11/car-slams-into-midlothian-home-at-bedroom-of-80-year-old-s-mother/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "1200 KINGSCROSS RD, MIDLOTHIAN, VA, 23114"
    }
   },
   {
@@ -1699,7 +1823,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch; Hoodline",
     "links": "https://www.wtvr.com/news/local-news/chesterfield-county/portion-of-turner-road-in-chesterfield-closed-after-crash-involving-suv-motorcycle; https://www.12onyourside.com/2026/11/18/motorcyclist-seriously-injured-crash-involving-school-bus-chesterfield-county/; https://www.wric.com/news/local-news/chesterfield-county/motorcyclist-hospitalized-crash-school-bus/; https://richmond.com/news/local/crime-courts/article_4458d766-afa0-47e3-ae67-1142e03fc8f2.html; https://hoodline.com/2026/11/chesterfield-school-bus-crash-leaves-motorcyclist-28-fighting-for-life/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "TURNER RD & ELKHARDT RD, NORTH CHESTERFIELD, VA, 23225"
    }
   },
   {
@@ -1726,7 +1852,9 @@
     "sources": "WRIC 8News",
     "links": "https://www.wric.com/news/local-news/chesterfield-county/bicyclist-hospitalized-hit-vehicle/",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "W HUNDRED RD & RIVERS BEND RD, CHESTER, VA, 23836"
    }
   },
   {
@@ -1753,7 +1881,9 @@
     "sources": "WTVR CBS 6; NBC12 (WWBT); WRIC 8News; Richmond Times-Dispatch",
     "links": "https://www.wtvr.com/news/local-news/richmond/one-dies-following-crash-on-forest-hill-avenue; https://www.12onyourside.com/2026/11/25/1-dead-after-forest-hill-avenue-motorcycle-crash/; https://www.wric.com/news/local-news/richmond/motorcyclist-killed-crash-forest-hill-avenue/; https://richmond.com/news/local/crime-courts/article_42c86dd5-66d1-4606-a0f3-effb031b340c.html",
     "approx": false,
-    "month": "2026-11"
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "Mexico Restaurant, Forest Hill Avenue, Richmond"
    }
   },
   {
@@ -1761,8 +1891,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.6214927,
-     37.6513286
+     -77.53562,
+     37.63003
     ]
    },
    "properties": {
@@ -1779,8 +1909,10 @@
     "severity": "injury",
     "sources": "WTVR CBS 6; Hoodline",
     "links": "https://www.wtvr.com/videos/news/local-news/henrico-county/woman-seriously-hurt-after-pedestrian-crash-in-henrico; https://hoodline.com/2026/11/woman-seriously-hurt-in-henrico-crash-as-lane-closures-expected-on-west-broad-street/",
-    "approx": false,
-    "month": "2026-11"
+    "approx": true,
+    "month": "2026-11",
+    "geo_confidence": "approximate",
+    "geo_how": "W Broad St x N Parham Rd (source names only 'West Broad Street')"
    }
   },
   {
@@ -1788,8 +1920,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -77.5,
-     37.61
+     -77.53562,
+     37.63003
     ]
    },
    "properties": {
@@ -1807,7 +1939,9 @@
     "sources": "WTVR CBS 6",
     "links": "https://www.wtvr.com/news/local-news/driver-arrested-in-dui-hit-and-run-that-killed-boy-on-west-broad-street-in-henrico",
     "approx": true,
-    "month": "2026-05"
+    "month": "2026-05",
+    "geo_confidence": "approximate",
+    "geo_how": "W Broad St x N Parham Rd (source names only 'West Broad Street')"
    }
   }
  ]
