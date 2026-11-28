@@ -88,7 +88,9 @@ ROW_ANCHORS = {
     58: (37.44748, -77.42320, "interpolated", "I-95 MM 67, bracketed by OSM exits 62 and 69"),
     59: (37.54702, -77.43034, "surveyed", "I-95 x N 7th St geometry"),
     61: (37.37801, -77.40910, "surveyed", "VA-288 x I-95 geometry"),
-    68: (37.63003, -77.53562, "approximate", "W Broad St x N Parham Rd (source names only 'West Broad Street')"),
+    68: (37.68813, -77.45207, "surveyed", "I-95 x Sliding Hill Rd crossing geometry (Exit 86 = MM 86), gap 0.4 m"),
+    69: (37.47764, -77.71794, "surveyed", "Brightwalton Rd x Webster Crescent Ln shared OSM node (gap 0.0 m)"),
+    70: (37.63003, -77.53562, "approximate", "W Broad St x N Parham Rd (source names only 'West Broad Street')"),
 }
 
 # Fallback matching when row numbers shift: (row, location substring)
@@ -153,7 +155,9 @@ ROW_LOCATION_HINTS = {
     58: "mile marker 67 (Bensley",
     59: "Seventh Street overpass",
     61: "Ramp from Route 288 South",
-    68: "West Broad Street, Henrico",
+    68: "mile marker 86",
+    69: "Brightwalton Road & Webster Crescent",
+    70: "West Broad Street, Henrico",
 }
 
 

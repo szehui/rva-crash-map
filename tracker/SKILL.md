@@ -145,7 +145,8 @@ All fetching uses a Chrome browser UA — plain urllib works.
 - RTD slip-and-fall / law-firm advertorial pieces pass the crash keyword filter
   ("slip and fall accident report"). Reject anything with no Richmond-locality
   signal in the og:description.
-- **A WTVR story that lives ONLY under `/videos/` is invisible to both sitemaps and to
+- **Google News RSS links are now opaque (`AU_yqL` blobs), so base64-decoding no longer yields the article URL.** To turn a Google News headline into a real URL, don't guess the slug — enumerate the outlet's sitemap: Arc CMS (NBC12/12onyourside) `https://www.12onyourside.com/arc/outboundfeeds/sitemap-index/?outputType=xml` → the `sitemap/?outputType=xml` pages (100 URLs each, then `&from=100`, `200`, `300`), grep for the story; Scripps (WTVR) grep `sitemap-YYYYMM.xml`; WRIC resolve via `/wp-json/wp/v2/posts?slug=<slug>`. Slug-guessing 12onyourside almost never works: four hand-built variants of the 11/27 Hanover firetruck story all 404'd; the real slug was `2-dead-after-car-hits-fire-truck-i-95-hanover`.
+- **A WTVR story that lives ONLY under `/videos/` is invisible to both sitemaps and to the
   the keyword filter.** 2026-11-25: "Woman seriously hurt after pedestrian crash in
   Henrico" existed only at `wtvr.com/videos/news/local-news/henrico-county/<slug>`
   (the `/news/local-news/henrico-county/<slug>` twin 404s, and `<slug>-nov-25-2026`
@@ -351,6 +352,30 @@ required on a free plan, so treat the page as world-readable).
 
 Local checkout: `~/repos/rva-crash-map` (`index.html` = map, plus geojson/json/png/README).
 
+### Public distribution (packaged copy in the repo)
+
+The repo doubles as a runnable distribution so someone else can stand up their own
+tracker: `tracker/` (skill manual + all pipeline scripts + `rva_paths.py` config layer),
+`docs/SETUP.md` (OAuth → sheet → config → backfill → schedule), `docs/OPERATIONS.md`
+(script map, pin repair, counting rules), `docs/TROUBLESHOOTING.md`, `prompts/daily.md`
+and `prompts/monthly.md` (the stage-2 instructions, since those are judgement steps, not
+code).
+
+`tracker/` is **generated**, never hand-edited. After changing any packaged script:
+
+```bash
+bash scripts/package_to_repo.sh        # copies scripts + SKILL.md → repo, commits, pushes
+bash scripts/package_to_repo.sh --no-push
+```
+
+The sync rewrites the sheet URL to a placeholder and prefixes SKILL.md with a pointer to
+the docs — the public copy must not carry this instance's spreadsheet id.
+
+All scripts now resolve paths through `scripts/rva_paths.py` (env vars → config file at
+`~/.config/rva-crash-tracker/config.json` → this machine's defaults). Defaults are
+unchanged, so cron behaviour is identical; `RVA_*` overrides exist purely for other
+installs and for test runs into a temp dir.
+
 **The daily cron job publishes automatically** after writing new rows — one command:
 
 ```bash
@@ -422,6 +447,13 @@ Police lookup per-run: `Police lookup: swept N rows → M cells updated, K uncha
 
 ## Status
 
+- 2026-11-27 21:00 ET run (processed 11/26–11/27 articles, Thanksgiving + Black Friday): 7 candidates → **2 new incidents**, 5 skipped (1 non-traffic, 4 Gray-wire non-traffic/out-of-locality). Sheet 66 → **68 incidents** (70 grid rows incl. the pre-window 2026-05-23 tail now at R70), 0 blanks, 0 dupes.
+  - **R68 new:** 11/27 (Fri) ~12:20 a.m. I-95 southbound at mile marker 86 near Sliding Hill Road, **Hanover** — two-vehicle crash into a stopped emergency vehicle: a Hanover County Fire & EMS truck was stopped in the left and middle lanes with emergency lights on, working an *earlier* crash, when a silver Toyota Camry hit its side. Camry driver + one passenger died at the scene; a second passenger was hospitalized; no firefighters hurt. VSP investigating; southbound lanes reopened ~5:47 a.m. (WRIC + NBC12/WWBT + RTD; 3 links). WWBT is the only outlet that gives the mile marker (86).
+  - **R69 new:** 11/27 (Fri) 3:11 p.m. Brightwalton Road & Webster Crescent Lane, **Chesterfield** — electric-bicycle crash; a juvenile was seriously injured and airlifted from the scene, Brightwalton Road closed both ways during the response; Chesterfield Police disclosed no circumstances and the case is under investigation (WTVR + The Chesterfield Report, an AI-drafted local aggregator that cites WTVR; 2 links). **Not in the candidate list** — WTVR published it on `/news/local-news/chesterfield-county/...` but it is absent from BOTH `news-sitemap-content.xml` (16 URLs this run) and `sitemap-202611.xml`; found only by the Google News RSS safety net. Second run in a row where the safety net was the sole detector.
+  - Skips (5): NBC12/WWBT Black Friday southside Richmond shooting (2400 blk Columbia St, 1 dead 2 hurt — homicide); NBC12 Gray wire — NE senator's husband's suicide, KY Target shoplifting/assault, Nashville I-24 Good Samaritan struck while helping (real crash, out-of-locality), Palm Beach County FL I-95 wrong-way detective fatal; RTD college-football CFP column (keyword false positive on "death").
+  - Stage 1 exit 0: wtvr 425, nbc12 100, **wric 0 (transient AGAIN — 3rd run in 5; manual `/wp-json/wp/v2/posts` pages 1–3 returned 300 posts, 168 since 11/24, and its one crash story was exactly the Hanover firetruck)**; vpm 20, richmonder 15, henrico citizen 15, rtd 75; 640 unique URLs; 5 keyword + 69 RTD titles → 7 candidates. Safety net (10 Google News RSS queries) found the e-bike story that stage 1 missed.
+  - Write path: no `values().append`; read `Crashes!A1:K500` FORMATTED_VALUE (68 rows), inserted 2 rows before the pre-window tail, single `values().update` over `Crashes!A1:K70` (RAW), then `values().clear("Crashes!A71:Z500")`. Anchors added **before** publishing (rowing the anchor 68→70 for the 5/23 tail): `68: I-95 x Sliding Hill Rd crossing (37.68813, -77.45207, gap 0.4 m)`, `69: Brightwalton Rd x Webster Crescent Ln shared node (37.47764, -77.71794, gap 0.0 m)` — so the first publish came back clean. `publish_map.sh`: built `incidents=69 (window=68, pre_window=1)`, audit **clean** (WRONG COUNTY 0, COLLAPSED 0), published **ac1333b**, LIVE 69 matches; 63 anchors (surveyed 52 / interpolated 7 / midpoint 3 / approximate 1), ungeocoded 0. Token refreshed, only `token` patched back, no `expiry`. Marked 11 URLs seen (state 4,937).
+- 2026-11-26 21:00 ET run (processed 11/25–11/26 articles, Thanksgiving Day — thin local news day): 3 candidates → **0 new incidents, 3 skipped**; sheet unchanged at **66 incidents**. All 3 were NBC12 Gray wire, non-traffic + out-of-locality: Davenport FL pajama-party shooting (Polk County sheriff), Waco/Universal City TX 92-year-old charged in 1969 son's death, College Station TX Airbnb co-worker shooting. Stage 1 exit 0: wtvr 417, nbc12 100, **wric 0 (transient again — re-queried `/wp-json/wp/v2/posts` pages 1–3 manually: 10 recent crash-keyword titles, all already handled — Louisa triple-fatal skip, Ashland vehicle-of-interest R51, Forest Hill R66, Mississippi plane, DMV campaign, 4 non-traffic)**, vpm 20, richmonder 15, henrico citizen 15, rtd 52; 609 unique URLs; 3 keyword + 42 RTD titles → 3 candidates. Safety net (12 Google News RSS queries incl. `site:` for all 7 outlets + `when:3d` locality): every in-locality hit resolved to a logged row (R66 Forest Hill motorcycle ×4 outlets, R67 Henrico/W Broad pedestrian ×3, R51 Ashland pickup) or out-of-locality/non-traffic (Louisa 11/25 triple-fatal ×4, Appomattox Route 24, Tolbert sentencing, Hanover home shooting, Chesterfield house explosion, tree-on-house, Portsmouth Route 164, Ohio bus head-on, MS/FL/NC/PA wire). Two loose ends held: (a) the **8th & Clay Sts crosswalk red-sedan/trooper story still has NO crash date** anywhere (Fox News + Wisevoter only, 3rd appearance) — remains unlogged, no outlet among the 7 has filed it; (b) Henrico Citizen 11/23 "East Parham Road" = `pji-law-reopens-renovated-henrico-office` (law-firm office, not a crash). No sheet write. `publish_map.sh`: **map already current — "no changes since last publish"**, audit **clean** (WRONG COUNTY 0, COLLAPSED 0), LIVE 67 = local; 61 anchors (surveyed 50 / interpolated 7 / midpoint 3 / approximate 1), ungeocoded 0.
 - 2026-11-25 23:06 ET **validation run** (new prompt, same-day second run 2h after the 21:00 job): 1 candidate → **0 new incidents, 1 skipped**; sheet unchanged at **66 incidents**. Skip: NBC12/WIS Gray wire "Woman sentenced for DUI crash that killed teacher" (Columbia SC, Jan-11-2024 crash, 20y sentence — out-of-locality + outside window). Stage 1 exit 0: wtvr 410, nbc12 100, **wric 0 (transient — `/wp-json/wp/v2/posts?per_page=100` returned 200/100 posts on manual re-test; its 6 crash-keyword titles for 11/24–25 were all already handled: R66 Forest Hill, Louisa triple-fatal skip, 4 non-traffic)**, vpm 20, richmonder 15, henrico citizen 15, rtd 89; 639 unique URLs; 1 keyword + 47 RTD titles → 1 candidate. Safety net (4 Google News RSS `when:2d` locality queries): every in-locality hit already logged (R66 Forest Hill, R67 Henrico/W Broad pedestrian, R51 Ashland vehicle-of-interest) or out-of-locality/non-traffic (Louisa ×4 outlets, Appomattox Route 24, Mississippi plane, Tolbert sentencing). No sheet write. `publish_map.sh`: **map already current — "no changes since last publish"**, audit clean (WRONG COUNTY 0, COLLAPSED 0), LIVE 67 incidents matches local; 61 row anchors (surveyed 50 / interpolated 7 / midpoint 3 / approximate 1), ungeocoded 0.
 - 2026-11-25 21:00 ET run (processed 11/24–11/25 articles): 14 candidates → **2 new incidents** (+1 enrichment), 12 skipped. Sheet 64 → **66 incidents** (68 grid rows incl. the stale 2026-05-23 tail now at R68), 0 blanks, 0 dupes, 23 J/K police-note rows intact (17 J + 8 K).
   - **R66 new:** 11/24 ~8:35 p.m. 5000 block of Forest Hill Avenue (near Mexico Restaurant, in front of Publix and Goodwill), **City of Richmond** — two-vehicle car-vs-motorcycle crash; RPD called just after 8:30 p.m., found the motorcyclist (adult man) with significant injuries, he died at a local hospital; identity not released; car driver stayed on scene, RPD Crash Team investigating (WTVR + WWBT + WRIC + RTD; 4 links).
