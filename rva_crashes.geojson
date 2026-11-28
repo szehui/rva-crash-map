@@ -1986,12 +1986,72 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -77.45207,
+     37.68813
+    ]
+   },
+   "properties": {
+    "row": 68,
+    "date": "2026-11-27",
+    "time": "~12:20 a.m.",
+    "location": "I-95 southbound at mile marker 86, near Sliding Hill Road (Hanover County)",
+    "locality": "Hanover County",
+    "what": "Two-vehicle crash involving a stopped emergency vehicle: a Hanover County Fire and EMS truck was stopped in the left and middle lanes of Interstate 95 southbound near Sliding Hill Road with its emergency lights on, responding to an earlier crash, when a silver Toyota Camry hit its side. The Camry's driver and a passenger died at the scene, and a second passenger was taken to a hospital with injuries. Fire department members were not hurt. Virginia State Police are investigating; the southbound lanes reopened around 5:47 a.m.",
+    "injuries": "1 (second Camry passenger, hospitalized)",
+    "fatalities": "2 (Camry driver and a passenger, both died at scene; identities not released)",
+    "fatal_n": 2,
+    "inj_n": 1,
+    "severity": "fatal",
+    "sources": "WRIC 8News; NBC12 (WWBT); Richmond Times-Dispatch",
+    "links": "https://www.wric.com/news/local-news/hanover-county/driver-passenger-dead-camry-fire-truck-i95/; https://www.12onyourside.com/2026/11/27/2-dead-after-car-hits-fire-truck-i-95-hanover/; https://richmond.com/news/local/crime-courts/article_21851580-916d-40f1-bf89-132593bd4360.html",
+    "approx": false,
+    "month": "2026-11",
+    "pre_window": false,
+    "geo_confidence": "surveyed",
+    "geo_how": "I-95 x Sliding Hill Rd crossing geometry (Exit 86 = MM 86), gap 0.4 m"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.71794,
+     37.47764
+    ]
+   },
+   "properties": {
+    "row": 69,
+    "date": "2026-11-27",
+    "time": "3:11 p.m.",
+    "location": "Brightwalton Road & Webster Crescent Lane, Chesterfield County",
+    "locality": "Chesterfield County",
+    "what": "Electric bicycle crash: Chesterfield County Police were called at 3:11 p.m. to the area of Brightwalton Road and Webster Crescent Lane, where a juvenile was seriously injured in an electric bike crash. The juvenile was airlifted from the scene, and Brightwalton Road was closed in both directions during the emergency response and investigation. Police did not disclose the circumstances of the crash or the juvenile's specific injuries; the incident remains under investigation.",
+    "injuries": "1 (juvenile, serious injuries, airlifted)",
+    "fatalities": "0 (none reported)",
+    "fatal_n": 0,
+    "inj_n": 1,
+    "severity": "injury",
+    "sources": "WTVR CBS 6; The Chesterfield Report",
+    "links": "https://www.wtvr.com/news/local-news/chesterfield-county/juvenile-airlifted-following-electric-bike-crash-in-chesterfield-county; https://chesterfieldreport.com/story/juvenile-airlifted-after-e-bike-crash-in-chesterfield.html",
+    "approx": false,
+    "month": "2026-11",
+    "pre_window": false,
+    "geo_confidence": "surveyed",
+    "geo_how": "Brightwalton Rd x Webster Crescent Ln shared OSM node (gap 0.0 m)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -77.53562,
      37.63003
     ]
    },
    "properties": {
-    "row": 68,
+    "row": 70,
     "date": "2026-05-23",
     "time": "",
     "location": "West Broad Street, Henrico",
